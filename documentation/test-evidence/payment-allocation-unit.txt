@@ -1,0 +1,11 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< br.com.erp:erp-backend >-----------------------
+[INFO] Building erp-backend 0.1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ erp-backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 23 resources from src\main\resources to target\classes
+[INFO] 

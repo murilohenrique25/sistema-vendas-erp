@@ -1,0 +1,18 @@
+{
+  "Health": "UP",
+  "SalesPage": 200,
+  "Assets": {
+    "styles-7YASRQJT.css": 200,
+    "chunk-3BT3JLHO.js": 200,
+    "chunk-OPN3MQJW.js": 200,
+    "main-57BYPOWG.js": 200,
+    "chunk-7J25M2VO.js": 200,
+    "chunk-EEPO7PYV.js": 200
+  },
+  "AnonymousApi": 401,
+  "AnonymousCancellation": 401,
+  "Migration": "20",
+  "TenantSalePaymentCancellationCounts": "0|0|0|0",
+  "FreeC": 402145280,
+  "Timestamp": "2026-10-15T10:44:53.9899660+00:00"
+}

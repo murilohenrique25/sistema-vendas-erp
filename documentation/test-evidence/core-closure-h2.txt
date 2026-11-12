@@ -1,0 +1,330 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< br.com.erp:erp-backend >-----------------------
+[INFO] Building erp-backend 0.1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ erp-backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 32 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ erp-backend ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 103 source files with javac [debug parameters release 21] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ erp-backend ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ erp-backend ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 57 source files with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ erp-backend ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running br.com.erp.AccessProfileTest
+14:51:56.504 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [br.com.erp.AccessProfileTest]: AccessProfileTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:51:56.813 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.AccessProfileTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-11-11T14:51:57.717-03:00  INFO 12264 --- [           main] br.com.erp.AccessProfileTest             : Starting AccessProfileTest using Java 21.0.12.1 with PID 12264 (started by user in C:\Users\user\Documents\dev\sistema-vendas-erp\backend)
+2026-11-11T14:51:57.719-03:00  INFO 12264 --- [           main] br.com.erp.AccessProfileTest             : The following 1 profile is active: "test"
+2026-11-11T14:52:00.274-03:00  INFO 12264 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-11T14:52:00.429-03:00  INFO 12264 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 136 ms. Found 2 JPA repository interfaces.
+2026-11-11T14:52:01.621-03:00  INFO 12264 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-11T14:52:02.042-03:00  INFO 12264 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:erp user=SA
+2026-11-11T14:52:02.049-03:00  INFO 12264 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-11T14:52:02.128-03:00  INFO 12264 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:erp (H2 2.3)
+2026-11-11T14:52:02.255-03:00  INFO 12264 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-11-11T14:52:02.259-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 37 migrations (execution time 00:00.079s)
+2026-11-11T14:52:02.273-03:00  INFO 12264 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-11-11T14:52:02.334-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2026-11-11T14:52:02.351-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - foundation"
+2026-11-11T14:52:02.392-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "2 - product catalog"
+2026-11-11T14:52:02.411-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "3 - barcode key length"
+2026-11-11T14:52:02.434-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "4 - inventory and losses"
+2026-11-11T14:52:02.472-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "5 - user version"
+2026-11-11T14:52:02.488-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "6 - access profiles"
+2026-11-11T14:52:02.498-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "7 - branch access"
+2026-11-11T14:52:02.532-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "8 - suppliers"
+2026-11-11T14:52:02.543-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "9 - purchase orders"
+2026-11-11T14:52:02.574-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "10 - accounts payable"
+2026-11-11T14:52:02.601-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "11 - treasury"
+2026-11-11T14:52:02.625-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "12 - payable treasury link"
+2026-11-11T14:52:02.709-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "13 - customers"
+2026-11-11T14:52:02.718-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "14 - treasury receivable origins"
+2026-11-11T14:52:02.740-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "15 - accounts receivable"
+2026-11-11T14:52:02.809-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "16 - cash flow indexes"
+2026-11-11T14:52:02.822-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "17 - bank reconciliation"
+2026-11-11T14:52:02.857-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "18 - pos cash sessions"
+2026-11-11T14:52:02.903-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "19 - pos sales"
+2026-11-11T14:52:02.933-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "20 - sale payments and cancellation"
+2026-11-11T14:52:03.043-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "21 - sale returns"
+2026-11-11T14:52:03.075-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "22 - pos discounts and suspensions"
+2026-11-11T14:52:03.152-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "23 - receivable installments"
+2026-11-11T14:52:03.162-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "24 - pos on account"
+2026-11-11T14:52:03.213-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "25 - credit sale returns"
+2026-11-11T14:52:03.249-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "26 - pending checkouts"
+2026-11-11T14:52:03.258-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "27 - purchase receipt finance"
+2026-11-11T14:52:03.273-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "28 - purchase receipt installments"
+2026-11-11T14:52:03.284-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "29 - physical inventory"
+2026-11-11T14:52:03.299-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "30 - stock lots"
+2026-11-11T14:52:03.312-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "31 - replenishment"
+2026-11-11T14:52:03.321-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "32 - supplier return credits"
+2026-11-11T14:52:03.346-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "33 - supplier returns"
+2026-11-11T14:52:03.371-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "34 - branch pricing"
+2026-11-11T14:52:03.402-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "35 - sales orders"
+2026-11-11T14:52:03.424-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "36 - commercial rules"
+2026-11-11T14:52:03.443-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "37 - fiscal foundation"
+2026-11-11T14:52:03.460-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 37 migrations to schema "PUBLIC", now at version v37 (execution time 00:00.788s)
+2026-11-11T14:52:03.629-03:00  INFO 12264 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-11T14:52:03.759-03:00  INFO 12264 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-11-11T14:52:03.818-03:00  INFO 12264 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-11T14:52:04.294-03:00  INFO 12264 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-11T14:52:04.431-03:00  INFO 12264 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-11T14:52:05.832-03:00  INFO 12264 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-11T14:52:05.894-03:00  INFO 12264 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-11T14:52:07.810-03:00  INFO 12264 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-11T14:52:10.413-03:00  INFO 12264 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-11-11T14:52:11.095-03:00  INFO 12264 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-11-11T14:52:11.095-03:00  INFO 12264 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-11-11T14:52:11.096-03:00  INFO 12264 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-11-11T14:52:11.212-03:00  INFO 12264 --- [           main] br.com.erp.AccessProfileTest             : Started AccessProfileTest in 14.112 seconds (process running for 16.247)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\user\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.95 s -- in br.com.erp.AccessProfileTest
+[INFO] Running br.com.erp.BarcodeTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 s -- in br.com.erp.BarcodeTest
+[INFO] Running br.com.erp.BranchScopeTest
+2026-11-11T14:52:17.298-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.BranchScopeTest]: BranchScopeTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:52:17.333-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.BranchScopeTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.353 s -- in br.com.erp.BranchScopeTest
+[INFO] Running br.com.erp.CashFlowTest
+2026-11-11T14:52:24.652-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.CashFlowTest]: CashFlowTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:52:24.656-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.CashFlowTest
+2026-11-11T14:52:31.655-03:00  WARN 12264 --- [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'from' for method parameter type LocalDate is not present]
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.722 s -- in br.com.erp.CashFlowTest
+[INFO] Running br.com.erp.CashSessionTest
+2026-11-11T14:52:32.404-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.CashSessionTest]: CashSessionTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:52:32.408-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.CashSessionTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.44 s -- in br.com.erp.CashSessionTest
+[INFO] Running br.com.erp.CreditReturnMigrationTest
+2026-11-11T14:52:43.876-03:00  INFO 12264 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:credit-upgrade-7fcc1b63-0f92-4902-8606-6a4d87d59a25 (H2 2.3)
+2026-11-11T14:52:44.013-03:00  INFO 12264 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-11-11T14:52:44.014-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 37 migrations (execution time 00:00.135s)
+2026-11-11T14:52:44.015-03:00  INFO 12264 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-11-11T14:52:44.020-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2026-11-11T14:52:44.025-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - foundation"
+2026-11-11T14:52:44.035-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "2 - product catalog"
+2026-11-11T14:52:44.048-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "3 - barcode key length"
+2026-11-11T14:52:44.066-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "4 - inventory and losses"
+2026-11-11T14:52:44.087-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "5 - user version"
+2026-11-11T14:52:44.094-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "6 - access profiles"
+2026-11-11T14:52:44.099-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "7 - branch access"
+2026-11-11T14:52:44.110-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "8 - suppliers"
+2026-11-11T14:52:44.115-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "9 - purchase orders"
+2026-11-11T14:52:44.130-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "10 - accounts payable"
+2026-11-11T14:52:44.150-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "11 - treasury"
+2026-11-11T14:52:44.163-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "12 - payable treasury link"
+2026-11-11T14:52:44.184-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "13 - customers"
+2026-11-11T14:52:44.187-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "14 - treasury receivable origins"
+2026-11-11T14:52:44.198-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "15 - accounts receivable"
+2026-11-11T14:52:44.220-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "16 - cash flow indexes"
+2026-11-11T14:52:44.228-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "17 - bank reconciliation"
+2026-11-11T14:52:44.247-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "18 - pos cash sessions"
+2026-11-11T14:52:44.258-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "19 - pos sales"
+2026-11-11T14:52:44.271-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "20 - sale payments and cancellation"
+2026-11-11T14:52:44.329-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "21 - sale returns"
+2026-11-11T14:52:44.341-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "22 - pos discounts and suspensions"
+2026-11-11T14:52:44.373-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "23 - receivable installments"
+2026-11-11T14:52:44.378-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "24 - pos on account"
+2026-11-11T14:52:44.398-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 24 migrations to schema "PUBLIC", now at version v24 (execution time 00:00.252s)
+2026-11-11T14:52:44.428-03:00  INFO 12264 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:credit-upgrade-7fcc1b63-0f92-4902-8606-6a4d87d59a25 (H2 2.3)
+2026-11-11T14:52:44.463-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 37 migrations (execution time 00:00.032s)
+2026-11-11T14:52:44.465-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 24
+2026-11-11T14:52:44.466-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "25 - credit sale returns"
+2026-11-11T14:52:44.482-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "26 - pending checkouts"
+2026-11-11T14:52:44.487-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "27 - purchase receipt finance"
+2026-11-11T14:52:44.498-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "28 - purchase receipt installments"
+2026-11-11T14:52:44.502-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "29 - physical inventory"
+2026-11-11T14:52:44.514-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "30 - stock lots"
+2026-11-11T14:52:44.523-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "31 - replenishment"
+2026-11-11T14:52:44.527-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "32 - supplier return credits"
+2026-11-11T14:52:44.542-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "33 - supplier returns"
+2026-11-11T14:52:44.553-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "34 - branch pricing"
+2026-11-11T14:52:44.564-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "35 - sales orders"
+2026-11-11T14:52:44.577-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "36 - commercial rules"
+2026-11-11T14:52:44.590-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "37 - fiscal foundation"
+2026-11-11T14:52:44.594-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 13 migrations to schema "PUBLIC", now at version v37 (execution time 00:00.072s)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.778 s -- in br.com.erp.CreditReturnMigrationTest
+[INFO] Running br.com.erp.CreditReturnTest
+2026-11-11T14:52:44.632-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.CreditReturnTest]: CreditReturnTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:52:44.643-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.CreditReturnTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.22 s -- in br.com.erp.CreditReturnTest
+[INFO] Running br.com.erp.CustomerTest
+2026-11-11T14:52:58.857-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.CustomerTest]: CustomerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:52:58.864-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.CustomerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.407 s -- in br.com.erp.CustomerTest
+[INFO] Running br.com.erp.FoundationTest
+2026-11-11T14:53:03.268-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.FoundationTest]: FoundationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:53:03.277-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.FoundationTest
+2026-11-11T14:53:09.360-03:00  WARN 12264 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23505, SQLState: 23505
+2026-11-11T14:53:09.360-03:00 ERROR 12264 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unique index or primary key violation: "PUBLIC.CONSTRAINT_INDEX_754 ON PUBLIC.BRANCH(TENANT_ID NULLS FIRST, CODE NULLS FIRST) VALUES ( /* key:85 */ UUID '1bf14c61-25ee-4e26-94a0-2c02ada8c79e', 'MATRIZ')"; SQL statement:
+insert into branch (active,code,name,tenant_id,version,id) values (?,?,?,?,?,?) [23505-232]
+2026-11-11T14:53:14.564-03:00  WARN 12264 --- [ool-10-thread-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23505, SQLState: 23505
+2026-11-11T14:53:14.564-03:00 ERROR 12264 --- [ool-10-thread-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unique index or primary key violation: "PUBLIC.CONSTRAINT_INDEX_18 ON PUBLIC.PRODUCT(TENANT_ID NULLS FIRST, SKU NULLS FIRST) VALUES ( /* key:29 */ UUID '4f924394-a7de-4fae-be7f-3e98911a45fb', 'P1')"; SQL statement:
+insert into product (active,description,name,sale_price,sku,tenant_id,unit,version,id) values (?,?,?,?,?,?,?,?,?) [23505-232]
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.37 s -- in br.com.erp.FoundationTest
+[INFO] Running br.com.erp.InventoryTest
+2026-11-11T14:53:17.651-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.InventoryTest]: InventoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:53:17.659-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.InventoryTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.94 s -- in br.com.erp.InventoryTest
+[INFO] Running br.com.erp.PayableTest
+2026-11-11T14:53:28.583-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.PayableTest]: PayableTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:53:28.587-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.PayableTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.366 s -- in br.com.erp.PayableTest
+[INFO] Running br.com.erp.PayableTreasuryTest
+2026-11-11T14:53:37.949-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.PayableTreasuryTest]: PayableTreasuryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:53:37.954-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.PayableTreasuryTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.382 s -- in br.com.erp.PayableTreasuryTest
+[INFO] Running br.com.erp.PaymentAllocationTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s -- in br.com.erp.PaymentAllocationTest
+[INFO] Running br.com.erp.PendingCheckoutTest
+2026-11-11T14:53:46.376-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.PendingCheckoutTest]: PendingCheckoutTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:53:46.379-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.PendingCheckoutTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.208 s -- in br.com.erp.PendingCheckoutTest
+[INFO] Running br.com.erp.PosCommercialTest
+2026-11-11T14:53:54.588-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.PosCommercialTest]: PosCommercialTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:53:54.593-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.PosCommercialTest
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 31.98 s -- in br.com.erp.PosCommercialTest
+[INFO] Running br.com.erp.PurchaseTest
+2026-11-11T14:54:26.578-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.PurchaseTest]: PurchaseTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:54:26.585-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.PurchaseTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.04 s -- in br.com.erp.PurchaseTest
+[INFO] Running br.com.erp.ReceivablePlanTest
+2026-11-11T14:54:36.617-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.ReceivablePlanTest]: ReceivablePlanTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:54:36.621-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.ReceivablePlanTest
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.38 s -- in br.com.erp.ReceivablePlanTest
+[INFO] Running br.com.erp.ReceivableTest
+2026-11-11T14:54:52.006-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.ReceivableTest]: ReceivableTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:54:52.009-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.ReceivableTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.472 s -- in br.com.erp.ReceivableTest
+[INFO] Running br.com.erp.ReceivableTreasuryTest
+2026-11-11T14:55:00.473-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.ReceivableTreasuryTest]: ReceivableTreasuryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:55:00.479-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.ReceivableTreasuryTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.721 s -- in br.com.erp.ReceivableTreasuryTest
+[INFO] Running br.com.erp.ReconciliationTest
+2026-11-11T14:55:06.197-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.ReconciliationTest]: ReconciliationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:55:06.200-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.ReconciliationTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.616 s -- in br.com.erp.ReconciliationTest
+[INFO] Running br.com.erp.SaleCreditTest
+2026-11-11T14:55:14.812-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.SaleCreditTest]: SaleCreditTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:55:14.816-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.SaleCreditTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.59 s -- in br.com.erp.SaleCreditTest
+[INFO] Running br.com.erp.SalePaymentMigrationTest
+2026-11-11T14:55:25.427-03:00  INFO 12264 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:upgrade-42127e78-0cc3-493e-bb89-f7b0e4cce09b (H2 2.3)
+2026-11-11T14:55:25.458-03:00  INFO 12264 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-11-11T14:55:25.459-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 37 migrations (execution time 00:00.030s)
+2026-11-11T14:55:25.460-03:00  INFO 12264 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-11-11T14:55:25.466-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2026-11-11T14:55:25.469-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - foundation"
+2026-11-11T14:55:25.476-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "2 - product catalog"
+2026-11-11T14:55:25.483-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "3 - barcode key length"
+2026-11-11T14:55:25.489-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "4 - inventory and losses"
+2026-11-11T14:55:25.500-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "5 - user version"
+2026-11-11T14:55:25.506-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "6 - access profiles"
+2026-11-11T14:55:25.512-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "7 - branch access"
+2026-11-11T14:55:25.520-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "8 - suppliers"
+2026-11-11T14:55:25.525-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "9 - purchase orders"
+2026-11-11T14:55:25.537-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "10 - accounts payable"
+2026-11-11T14:55:25.548-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "11 - treasury"
+2026-11-11T14:55:25.556-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "12 - payable treasury link"
+2026-11-11T14:55:25.573-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "13 - customers"
+2026-11-11T14:55:25.575-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "14 - treasury receivable origins"
+2026-11-11T14:55:25.582-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "15 - accounts receivable"
+2026-11-11T14:55:25.600-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "16 - cash flow indexes"
+2026-11-11T14:55:25.605-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "17 - bank reconciliation"
+2026-11-11T14:55:25.615-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "18 - pos cash sessions"
+2026-11-11T14:55:25.624-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "19 - pos sales"
+2026-11-11T14:55:25.631-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 19 migrations to schema "PUBLIC", now at version v19 (execution time 00:00.088s)
+2026-11-11T14:55:25.653-03:00  INFO 12264 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:upgrade-42127e78-0cc3-493e-bb89-f7b0e4cce09b (H2 2.3)
+2026-11-11T14:55:25.681-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 37 migrations (execution time 00:00.025s)
+2026-11-11T14:55:25.683-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 19
+2026-11-11T14:55:25.686-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "20 - sale payments and cancellation"
+2026-11-11T14:55:25.713-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "21 - sale returns"
+2026-11-11T14:55:25.723-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "22 - pos discounts and suspensions"
+2026-11-11T14:55:25.760-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "23 - receivable installments"
+2026-11-11T14:55:25.763-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "24 - pos on account"
+2026-11-11T14:55:25.783-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "25 - credit sale returns"
+2026-11-11T14:55:25.792-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "26 - pending checkouts"
+2026-11-11T14:55:25.795-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "27 - purchase receipt finance"
+2026-11-11T14:55:25.804-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "28 - purchase receipt installments"
+2026-11-11T14:55:25.808-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "29 - physical inventory"
+2026-11-11T14:55:25.815-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "30 - stock lots"
+2026-11-11T14:55:25.820-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "31 - replenishment"
+2026-11-11T14:55:25.823-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "32 - supplier return credits"
+2026-11-11T14:55:25.831-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "33 - supplier returns"
+2026-11-11T14:55:25.838-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "34 - branch pricing"
+2026-11-11T14:55:25.843-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "35 - sales orders"
+2026-11-11T14:55:25.872-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "36 - commercial rules"
+2026-11-11T14:55:25.880-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "37 - fiscal foundation"
+2026-11-11T14:55:25.884-03:00  INFO 12264 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 18 migrations to schema "PUBLIC", now at version v37 (execution time 00:00.121s)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.490 s -- in br.com.erp.SalePaymentMigrationTest
+[INFO] Running br.com.erp.SalePaymentTest
+2026-11-11T14:55:25.908-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.SalePaymentTest]: SalePaymentTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:55:25.912-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.SalePaymentTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.94 s -- in br.com.erp.SalePaymentTest
+[INFO] Running br.com.erp.SaleReturnTest
+2026-11-11T14:55:38.852-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.SaleReturnTest]: SaleReturnTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:55:38.856-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.SaleReturnTest
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.42 s -- in br.com.erp.SaleReturnTest
+[INFO] Running br.com.erp.SaleTest
+2026-11-11T14:55:56.288-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.SaleTest]: SaleTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:55:56.291-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.SaleTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.66 s -- in br.com.erp.SaleTest
+[INFO] Running br.com.erp.SupplierTest
+2026-11-11T14:56:06.950-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.SupplierTest]: SupplierTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:56:06.953-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.SupplierTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.286 s -- in br.com.erp.SupplierTest
+[INFO] Running br.com.erp.TreasuryTest
+2026-11-11T14:56:11.233-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.TreasuryTest]: TreasuryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:56:11.239-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.TreasuryTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.542 s -- in br.com.erp.TreasuryTest
+[INFO] Running br.com.erp.UserTest
+2026-11-11T14:56:16.776-03:00  INFO 12264 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.UserTest]: UserTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T14:56:16.779-03:00  INFO 12264 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.UserTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.33 s -- in br.com.erp.UserTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 365, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:48 min
+[INFO] Finished at: 2026-11-11T14:56:29-03:00
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,34 @@
+
+> erp-frontend@0.1.0 build
+> ng build
+
+> Building...
+√ Building...
+Initial chunk files | Names              |  Raw size | Estimated transfer size
+chunk-HNLPIFSE.js   | -                  | 321.44 kB |                82.57 kB
+main-5ONEA43K.js    | main               | 154.11 kB |                27.22 kB
+styles-7YASRQJT.css | styles             |   4.93 kB |                 1.34 kB
+
+                    | Initial total      | 480.48 kB |               111.14 kB
+
+Lazy chunk files    | Names              |  Raw size | Estimated transfer size
+chunk-QRAI7IH7.js   | pos-sales          | 105.84 kB |                21.60 kB
+chunk-GZVKIX7Z.js   | receivables        |  32.24 kB |                 8.14 kB
+chunk-NBBWI2KJ.js   | payables           |  27.01 kB |                 6.83 kB
+chunk-XZ6NF4MI.js   | reconciliation     |  21.93 kB |                 5.76 kB
+chunk-TFFVV3CS.js   | pos-cash           |  21.75 kB |                 5.57 kB
+chunk-3QM4EKGX.js   | commercial-rules   |  18.01 kB |                 4.01 kB
+chunk-TJKBLF2E.js   | sales-orders       |  14.31 kB |                 3.63 kB
+chunk-UTGXW6TY.js   | replenishment      |  12.14 kB |                 3.05 kB
+chunk-U34I3SUP.js   | fiscal             |  11.99 kB |                 3.27 kB
+chunk-NMXVG2AO.js   | physical-inventory |  11.39 kB |                 3.10 kB
+chunk-SKVLJWYQ.js   | lots               |   8.70 kB |                 2.40 kB
+chunk-GKD6FY5Y.js   | branch-prices      |   6.76 kB |                 2.13 kB
+chunk-ISJJKJG6.js   | customer-credit    |   6.66 kB |                 2.22 kB
+chunk-GDFMVWG4.js   | supplier-returns   |   6.14 kB |                 2.24 kB
+chunk-DEYSVTB7.js   | -                  |   1.49 kB |               602 bytes
+
+Application bundle generation complete. [22.468 seconds] - 2026-11-11T18:02:48.868Z
+
+Output location: C:\Users\user\Documents\dev\sistema-vendas-erp\frontend\dist\erp
+

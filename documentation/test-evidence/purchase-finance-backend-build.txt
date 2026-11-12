@@ -1,0 +1,36 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< br.com.erp:erp-backend >-----------------------
+[INFO] Building erp-backend 0.1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ erp-backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 23 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ erp-backend ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 85 source files with javac [debug parameters release 21] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ erp-backend ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ erp-backend ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ erp-backend ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ erp-backend ---
+[INFO] Building jar: C:\Users\user\Documents\dev\sistema-vendas-erp\backend\target\erp-backend-0.1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:3.5.16:repackage (repackage) @ erp-backend ---
+[INFO] Replacing main artifact C:\Users\user\Documents\dev\sistema-vendas-erp\backend\target\erp-backend-0.1.0-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\user\Documents\dev\sistema-vendas-erp\backend\target\erp-backend-0.1.0-SNAPSHOT.jar.original
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  12.974 s
+[INFO] Finished at: 2026-11-11T13:35:01-03:00
+[INFO] ------------------------------------------------------------------------

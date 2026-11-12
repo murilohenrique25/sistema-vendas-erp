@@ -1,0 +1,27 @@
+{
+  "Health": "UP",
+  "Pages": {
+    "customer-credit": 200,
+    "receivables": 200,
+    "pos-sales": 200
+  },
+  "Assets": {
+    "chunk-E57EJVDM.js": 200,
+    "chunk-E5F32ML4.js": 200,
+    "chunk-W2WTBGIJ.js": 200,
+    "chunk-5D7DYFBW.js": 200,
+    "styles-7YASRQJT.css": 200,
+    "main-5O5QBZ3H.js": 200,
+    "chunk-S7PBK6LC.js": 200,
+    "chunk-A6HR3DN2.js": 200
+  },
+  "AnonymousApis": {
+    "PUT policy": 401,
+    "GET policy": 401,
+    "POST sale": 401
+  },
+  "Migration": "24",
+  "TenderedNullable": "NO",
+  "TenantCreditPolicyCreditSalePlanTitleCounts": "0|0|0|0|0",
+  "Timestamp": "2026-10-16T12:48:39.4053453+00:00"
+}

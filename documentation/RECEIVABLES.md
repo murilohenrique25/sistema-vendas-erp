@@ -1,0 +1,23 @@
+# Clientes e contas a receber
+
+Clientes são compartilhados pelas filiais da empresa, com código único normalizado, nome, identificação fiscal declarada, contato, e-mail, telefone, endereço e observações. Cadastro, busca paginada, edição e ativação usam `customer:read/write`, versão e auditoria. Identificação fiscal não é validada em serviço externo. Não existe exclusão física, análise de crédito ou CRM completo.
+
+Títulos manuais pertencem à empresa, filial e cliente. Preservam nome do cliente no lançamento, referência interna única, documento, descrição, emissão, vencimento e valor positivo em reais. Cliente inativo pode ter obrigações pendentes; não há impedimento de registrar uma dívida histórica. Alterar o cadastro não altera o nome copiado no título.
+
+Criação usa UUID/fingerprint e lock da empresa. Reenvios com escala decimal equivalente retornam o título existente; chave reutilizada com outro conteúdo ou referência duplicada gera conflito. Os estados são OPEN, PARTIAL, RECEIVED e CANCELLED. Valor recebido fica entre zero e valor nominal; cancelamento exige OPEN com recebido zero e versão atual. Título cancelado conserva valor nominal, mostra pendente zero e preserva histórico. Vencido corresponde a OPEN/PARTIAL com vencimento anterior ao dia financeiro atual.
+
+Recebimentos são registros já realizados, com UUID, valor, data entre emissão e hoje, meio declarado e justificativa. Não ultrapassam o saldo pendente. Contas a receber não cobram automaticamente, confirmam Pix, emitem boleto nem geram títulos de vendas nesta etapa. Documentos/comprovantes informados não são verificados externamente.
+
+Conta de tesouraria é opcional. Com vínculo, o recebimento credita a conta na mesma transação do título, registro e auditoria. Estorno debita a conta original e mantém IDs das duas operações. Falta de saldo após retirada do dinheiro impede estornar; recomponha o saldo com o movimento real correspondente antes de tentar novamente. Excesso do limite monetário também desfaz integralmente o comando. Sem vínculo, recebimento/estorno continuam apenas registros financeiros.
+
+Reenvios não duplicam recibos ou movimentos, inclusive após estorno: repetir o recebimento original retorna REVERSED. Conta vinculada não pode ser trocada/removida em replay. Uma nova correção exige novo registro; não existe endpoint para apagar ou editar recibos. Chave de estorno reutilizada em outro recebimento gera conflito e rollback, incluindo tesouraria.
+
+Permissões: `receivable:read/write/receive/reverse`, com leitura em toda mutação. Movimento vinculado exige também `treasury:read/move` e acesso à filial da conta. Conta central em outra filial pode ser usada com acesso às duas. Listas, filtros e totais aplicam escopo antes da paginação. Tenant é sempre derivado da sessão. Novas empresas recebem permissões no provisionamento; migrações não elevam contas existentes. O conjunto atual tem 40 permissões e DTOs de usuários/perfis aceitam até 100 entradas, ainda sujeitas à whitelist e ao limite dos privilégios do gestor.
+
+Valores usam BigDecimal/NUMERIC(19,2) e strings no Angular. Datas LocalDate usam o calendário financeiro configurado por ERP_FINANCE_ZONE; instantes de auditoria são armazenados com offset. Extrato mantém sequência por conta e origens RECEIVABLE_RECEIPT/RECEIVABLE_REVERSAL. Escritas financeiras seguem lock empresa→título para conviver com retiradas, transferências e pagamentos.
+
+Frontend em `/customers` e `/receivables`, com seleção paginada, filtros de estado/vencidos, detalhe/histórico, recebimento, estorno e cancelamento. Falhas de rede/5xx mantêm comando original em memória, bloqueiam formulários/saída e oferecem retry. Não existe outbox durável: fechar/recarregar pode perder comando. Login real e homologação visual permanecem adiados pelo usuário.
+
+Migrações: V13 clientes; V14 amplia origens de tesouraria preservando as anteriores; V15 títulos/recebimentos com constraints/FKs compostas. V14 é Java porque o check de V12 recebeu nome automático diferente em H2 e PostgreSQL; localiza exatamente o check de origem no schema atual e substitui por constraint nomeada. Migrações já aplicadas não foram alteradas.
+
+Validação: CustomerTest (seis cenários), ReceivableTest (13), ReceivableTreasuryTest (nove), e versões PostgreSQL. Cobrem persistência, concorrência, isolamento, permissões, estados, limites, retry/estorno, rollback, disputa com retirada e aplicação de todo o conjunto de permissões (acima do antigo limite de 30). Pendentes: parcelas automáticas, juros/descontos, cobranças/provedores, anexos, importação, vendas/PDV, conciliação, crédito/CRM e homologação comercial.

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: br.com.erp.PayablePostgresIT
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 31.89 s -- in br.com.erp.PayablePostgresIT

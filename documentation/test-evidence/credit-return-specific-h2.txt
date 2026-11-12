@@ -1,0 +1,117 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< br.com.erp:erp-backend >-----------------------
+[INFO] Building erp-backend 0.1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ erp-backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 22 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ erp-backend ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 79 source files with javac [debug parameters release 21] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ erp-backend ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ erp-backend ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 52 source files with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ erp-backend ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running br.com.erp.CreditReturnTest
+10:59:06.659 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [br.com.erp.CreditReturnTest]: CreditReturnTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:59:06.991 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.CreditReturnTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-16T10:59:07.852-03:00  INFO 10960 --- [           main] br.com.erp.CreditReturnTest              : Starting CreditReturnTest using Java 21.0.12.1 with PID 10960 (started by user in C:\Users\user\Documents\dev\sistema-vendas-erp\backend)
+2026-10-16T10:59:07.854-03:00  INFO 10960 --- [           main] br.com.erp.CreditReturnTest              : The following 1 profile is active: "test"
+2026-10-16T10:59:10.828-03:00  INFO 10960 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-16T10:59:11.010-03:00  INFO 10960 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 164 ms. Found 2 JPA repository interfaces.
+2026-10-16T10:59:12.393-03:00  INFO 10960 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-16T10:59:12.770-03:00  INFO 10960 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:erp user=SA
+2026-10-16T10:59:12.773-03:00  INFO 10960 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-16T10:59:12.856-03:00  INFO 10960 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:erp (H2 2.3)
+2026-10-16T10:59:12.939-03:00  INFO 10960 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-10-16T10:59:12.943-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 25 migrations (execution time 00:00.049s)
+2026-10-16T10:59:12.956-03:00  INFO 10960 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-10-16T10:59:13.000-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2026-10-16T10:59:13.016-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - foundation"
+2026-10-16T10:59:13.052-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "2 - product catalog"
+2026-10-16T10:59:13.070-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "3 - barcode key length"
+2026-10-16T10:59:13.102-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "4 - inventory and losses"
+2026-10-16T10:59:13.145-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "5 - user version"
+2026-10-16T10:59:13.169-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "6 - access profiles"
+2026-10-16T10:59:13.183-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "7 - branch access"
+2026-10-16T10:59:13.213-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "8 - suppliers"
+2026-10-16T10:59:13.226-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "9 - purchase orders"
+2026-10-16T10:59:13.257-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "10 - accounts payable"
+2026-10-16T10:59:13.284-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "11 - treasury"
+2026-10-16T10:59:13.311-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "12 - payable treasury link"
+2026-10-16T10:59:13.374-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "13 - customers"
+2026-10-16T10:59:13.399-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "14 - treasury receivable origins"
+2026-10-16T10:59:13.430-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "15 - accounts receivable"
+2026-10-16T10:59:13.589-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "16 - cash flow indexes"
+2026-10-16T10:59:13.602-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "17 - bank reconciliation"
+2026-10-16T10:59:13.653-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "18 - pos cash sessions"
+2026-10-16T10:59:13.691-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "19 - pos sales"
+2026-10-16T10:59:13.745-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "20 - sale payments and cancellation"
+2026-10-16T10:59:13.842-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "21 - sale returns"
+2026-10-16T10:59:13.878-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "22 - pos discounts and suspensions"
+2026-10-16T10:59:13.962-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "23 - receivable installments"
+2026-10-16T10:59:13.976-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "24 - pos on account"
+2026-10-16T10:59:14.031-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "25 - credit sale returns"
+2026-10-16T10:59:14.065-03:00  INFO 10960 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 25 migrations to schema "PUBLIC", now at version v25 (execution time 00:00.792s)
+2026-10-16T10:59:14.306-03:00  INFO 10960 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-16T10:59:14.394-03:00  INFO 10960 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-10-16T10:59:14.447-03:00  INFO 10960 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-10-16T10:59:14.863-03:00  INFO 10960 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-16T10:59:14.985-03:00  INFO 10960 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-16T10:59:16.236-03:00  INFO 10960 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-16T10:59:16.278-03:00  INFO 10960 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-16T10:59:17.893-03:00  INFO 10960 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-16T10:59:20.612-03:00  INFO 10960 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-10-16T10:59:21.449-03:00  INFO 10960 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-16T10:59:21.451-03:00  INFO 10960 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-16T10:59:21.453-03:00  INFO 10960 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2026-10-16T10:59:21.645-03:00  INFO 10960 --- [           main] br.com.erp.CreditReturnTest              : Started CreditReturnTest in 14.363 seconds (process running for 16.188)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (C:\Users\user\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.50 s -- in br.com.erp.CreditReturnTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  48.593 s
+[INFO] Finished at: 2026-10-16T10:59:39-03:00
+[INFO] ------------------------------------------------------------------------

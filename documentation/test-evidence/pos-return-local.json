@@ -1,0 +1,18 @@
+{
+  "Health": "UP",
+  "SalesPage": 200,
+  "Assets": {
+    "chunk-PL4DYZPZ.js": 200,
+    "main-Z6OW6KOZ.js": 200,
+    "chunk-BPM4SWXJ.js": 200,
+    "chunk-KWYWDVAU.js": 200,
+    "chunk-V7BEPPC4.js": 200,
+    "styles-7YASRQJT.css": 200
+  },
+  "AnonymousReturns": 401,
+  "AnonymousCreateReturn": 401,
+  "Migration": "21",
+  "TenantSaleReturnItemRefundCounts": "0|0|0|0|0",
+  "FreeC": 281268224,
+  "Timestamp": "2026-10-15T11:12:46.7726063+00:00"
+}

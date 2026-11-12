@@ -1,0 +1,22 @@
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const ts=require('typescript');
+const source=fs.readFileSync(path.join(__dirname,'../src/app/sale-review.ts'),'utf8');
+const code=ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText;
+const exported={};new Function('exports',code)(exported);
+const create=exported.createSaleReview,matches=exported.saleReviewMatches;
+function input(){return {session:{id:'session',version:1,accountId:'drawer'},input:{requestId:'request',sessionId:'session',items:[{productId:'product',quantity:'1',expectedUnitPrice:'10.25',discountAmount:'0'}],payments:[{method:'PIX',accountId:'bank',amount:'10.25',tendered:'10.25',reference:'proof',confirmed:true}]},total:'10.25',checkout:null};}
+test('review matches its source',()=>{const data=input();assert.equal(matches(create(data),data),true);});
+test('snapshot is detached and recursively frozen',()=>{const data=input(),review=create(data);data.input.items[0].quantity='2';assert.equal(review.data.input.items[0].quantity,'1');assert.ok(Object.isFrozen(review.data.input.items[0]));assert.ok(Object.isFrozen(review.data.input.payments));assert.throws(()=>review.data.input.items.push({}),TypeError);});
+test('new session invalidates review',()=>{const data=input(),review=create(data);data.session.id='other';assert.equal(matches(review,data),false);});
+test('new session version invalidates review',()=>{const data=input(),review=create(data);data.session.version++;assert.equal(matches(review,data),false);});
+test('changed quantity invalidates review',()=>{const data=input(),review=create(data);data.input.items[0].quantity='2';assert.equal(matches(review,data),false);});
+test('changed discount invalidates review',()=>{const data=input(),review=create(data);data.input.items[0].discountAmount='1';assert.equal(matches(review,data),false);});
+test('changed bank proof invalidates review',()=>{const data=input(),review=create(data);data.input.payments[0].reference='other';assert.equal(matches(review,data),false);});
+test('changed account invalidates review',()=>{const data=input(),review=create(data);data.input.payments[0].accountId='other';assert.equal(matches(review,data),false);});
+test('lost confirmation invalidates review',()=>{const data=input(),review=create(data);data.input.payments[0].confirmed=false;assert.equal(matches(review,data),false);});
+test('changed financed terms invalidate review',()=>{const data=input();data.input.credit={customerId:'customer',amount:'5',firstDueOn:'2026-12-11',installmentCount:2,intervalMonths:1};const review=create(data);data.input.credit.firstDueOn='2027-01-11';assert.equal(matches(review,data),false);});
+test('changed preparation version invalidates review',()=>{const data=input();data.checkout={id:'checkout',version:0};const review=create(data);data.checkout.version=1;assert.equal(matches(review,data),false);});
+test('retry data preserves request identity and exact amounts',()=>{const data=input(),review=create(data);assert.equal(review.data.input.requestId,'request');assert.equal(review.data.input.payments[0].amount,'10.25');assert.equal(JSON.stringify(review.data),review.key);});

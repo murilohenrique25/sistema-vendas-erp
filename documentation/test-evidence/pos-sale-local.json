@@ -1,0 +1,15 @@
+{
+  "Health": "UP",
+  "SalesPage": 200,
+  "Assets": {
+    "chunk-F7U4PCJA.js": 200,
+    "chunk-746GZD5H.js": 200,
+    "chunk-662I3HYY.js": 200,
+    "main-QGFIYMNA.js": 200,
+    "chunk-CXO5RYHZ.js": 200
+  },
+  "AnonymousApi": 401,
+  "Migration": "19",
+  "TenantTerminalSessionSaleItemCounts": "0|0|0|0|0",
+  "Timestamp": "2026-10-15T00:08:42.0541976+00:00"
+}

@@ -1,0 +1,135 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< br.com.erp:erp-backend >-----------------------
+[INFO] Building erp-backend 0.1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ erp-backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 33 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ erp-backend ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ erp-backend ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ erp-backend ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 60 source files with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ erp-backend ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running br.com.erp.CoreFlowGuardTest
+15:03:14.805 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [br.com.erp.CoreFlowGuardTest]: CoreFlowGuardTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:03:15.091 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.CoreFlowGuardTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-11-11T15:03:15.915-03:00  INFO 2980 --- [           main] br.com.erp.CoreFlowGuardTest             : Starting CoreFlowGuardTest using Java 21.0.12.1 with PID 2980 (started by user in C:\Users\user\Documents\dev\sistema-vendas-erp\backend)
+2026-11-11T15:03:15.917-03:00  INFO 2980 --- [           main] br.com.erp.CoreFlowGuardTest             : The following 1 profile is active: "test"
+2026-11-11T15:03:18.544-03:00  INFO 2980 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-11T15:03:18.697-03:00  INFO 2980 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135 ms. Found 2 JPA repository interfaces.
+2026-11-11T15:03:19.857-03:00  INFO 2980 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-11T15:03:20.076-03:00  INFO 2980 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@92e2c93
+2026-11-11T15:03:20.079-03:00  INFO 2980 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-11T15:03:20.128-03:00  INFO 2980 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://127.0.0.1:25439/erp_core_test (PostgreSQL 16.13)
+2026-11-11T15:03:20.314-03:00  INFO 2980 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 38 migrations (execution time 00:00.148s)
+2026-11-11T15:03:20.337-03:00  INFO 2980 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 37
+2026-11-11T15:03:20.373-03:00  INFO 2980 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "38 - fiscal certificate metadata"
+2026-11-11T15:03:20.515-03:00  INFO 2980 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "public", now at version v38 (execution time 00:00.122s)
+2026-11-11T15:03:20.683-03:00  INFO 2980 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-11T15:03:20.769-03:00  INFO 2980 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-11-11T15:03:20.821-03:00  INFO 2980 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-11T15:03:21.207-03:00  INFO 2980 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-11T15:03:21.333-03:00  INFO 2980 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-11T15:03:22.593-03:00  INFO 2980 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-11T15:03:22.694-03:00  INFO 2980 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-11T15:03:24.402-03:00  INFO 2980 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-11T15:03:26.792-03:00  INFO 2980 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-11-11T15:03:27.551-03:00  INFO 2980 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-11-11T15:03:27.551-03:00  INFO 2980 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-11-11T15:03:27.553-03:00  INFO 2980 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2026-11-11T15:03:27.759-03:00  INFO 2980 --- [           main] br.com.erp.CoreFlowGuardTest             : Started CoreFlowGuardTest in 12.396 seconds (process running for 14.027)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\user\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.74 s -- in br.com.erp.CoreFlowGuardTest
+[INFO] Running br.com.erp.FiscalConfigurationTest
+2026-11-11T15:03:32.321-03:00  INFO 2980 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.FiscalConfigurationTest]: FiscalConfigurationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-11T15:03:32.332-03:00  INFO 2980 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.FiscalConfigurationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-11-11T15:03:32.452-03:00  INFO 2980 --- [           main] br.com.erp.FiscalConfigurationTest       : Starting FiscalConfigurationTest using Java 21.0.12.1 with PID 2980 (started by user in C:\Users\user\Documents\dev\sistema-vendas-erp\backend)
+2026-11-11T15:03:32.452-03:00  INFO 2980 --- [           main] br.com.erp.FiscalConfigurationTest       : The following 1 profile is active: "test"
+2026-11-11T15:03:36.841-03:00  INFO 2980 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-11T15:03:36.881-03:00  INFO 2980 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2026-11-11T15:03:37.034-03:00  INFO 2980 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-11-11T15:03:37.070-03:00  INFO 2980 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@5ed3696c
+2026-11-11T15:03:37.070-03:00  INFO 2980 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-11-11T15:03:37.073-03:00  INFO 2980 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://127.0.0.1:25439/erp_core_test (PostgreSQL 16.13)
+2026-11-11T15:03:37.145-03:00  INFO 2980 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 38 migrations (execution time 00:00.060s)
+2026-11-11T15:03:37.182-03:00  INFO 2980 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 38
+2026-11-11T15:03:37.183-03:00  INFO 2980 --- [           main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-11-11T15:03:37.213-03:00  INFO 2980 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-11T15:03:37.218-03:00  INFO 2980 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-11T15:03:37.243-03:00  INFO 2980 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-11T15:03:37.257-03:00  INFO 2980 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 16.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-11T15:03:37.367-03:00  INFO 2980 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-11T15:03:37.408-03:00  INFO 2980 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-11T15:03:38.104-03:00  INFO 2980 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-11-11T15:03:38.242-03:00  INFO 2980 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-11-11T15:03:38.242-03:00  INFO 2980 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-11-11T15:03:38.243-03:00  INFO 2980 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-11-11T15:03:38.267-03:00  INFO 2980 --- [           main] br.com.erp.FiscalConfigurationTest       : Started FiscalConfigurationTest in 5.922 seconds (process running for 24.536)
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.632 s -- in br.com.erp.FiscalConfigurationTest
+[INFO] Running br.com.erp.FiscalInfrastructureTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 s -- in br.com.erp.FiscalInfrastructureTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  36.988 s
+[INFO] Finished at: 2026-11-11T15:03:41-03:00
+[INFO] ------------------------------------------------------------------------

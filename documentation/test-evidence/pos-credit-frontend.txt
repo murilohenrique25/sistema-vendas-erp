@@ -1,0 +1,24 @@
+
+> erp-frontend@0.1.0 build
+> ng build
+
+> Building...
+√ Building...
+Initial chunk files | Names           |  Raw size | Estimated transfer size
+chunk-W2WTBGIJ.js   | -               | 320.64 kB |                82.39 kB
+main-5O5QBZ3H.js    | main            | 151.58 kB |                25.42 kB
+styles-7YASRQJT.css | styles          |   4.93 kB |                 1.34 kB
+
+                    | Initial total   | 477.15 kB |               109.15 kB
+
+Lazy chunk files    | Names           |  Raw size | Estimated transfer size
+chunk-E57EJVDM.js   | pos-sales       |  68.38 kB |                14.12 kB
+chunk-S7PBK6LC.js   | receivables     |  25.68 kB |                 6.59 kB
+chunk-E5F32ML4.js   | reconciliation  |  21.92 kB |                 5.75 kB
+chunk-5D7DYFBW.js   | pos-cash        |  21.75 kB |                 5.57 kB
+chunk-A6HR3DN2.js   | customer-credit |   6.66 kB |                 2.23 kB
+
+Application bundle generation complete. [13.592 seconds] - 2026-10-16T12:34:14.056Z
+
+Output location: C:\Users\user\Documents\dev\sistema-vendas-erp\frontend\dist\erp
+

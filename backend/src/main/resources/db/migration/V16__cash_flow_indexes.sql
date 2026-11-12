@@ -1,0 +1,3 @@
+CREATE INDEX ix_treasury_operation_tenant_created ON treasury_operation(tenant_id,created_at);
+CREATE INDEX ix_payable_payment_tenant_date ON payable_payment(tenant_id,paid_on);
+CREATE INDEX ix_receivable_receipt_tenant_date ON receivable_receipt(tenant_id,received_on);

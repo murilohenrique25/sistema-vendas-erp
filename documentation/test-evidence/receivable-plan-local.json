@@ -1,0 +1,21 @@
+{
+  "Health": "UP",
+  "ReceivablesPage": 200,
+  "Assets": {
+    "chunk-7LC6BCTE.js": 200,
+    "chunk-S23MHBUA.js": 200,
+    "chunk-WTTHFO4L.js": 200,
+    "main-JO5XCFYO.js": 200,
+    "chunk-ILZUGLIZ.js": 200,
+    "styles-7YASRQJT.css": 200,
+    "chunk-RI5ETIPC.js": 200
+  },
+  "AnonymousApis": {
+    "/api/v1/receivables/plans/preview": 401,
+    "GET plan": 401,
+    "/api/v1/receivables/plans": 401
+  },
+  "Migration": "23",
+  "TenantPlanInstallmentReceivableReceiptCounts": "0|0|0|0|0",
+  "Timestamp": "2026-10-16T11:50:51.1253169+00:00"
+}

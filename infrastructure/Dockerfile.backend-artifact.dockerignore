@@ -1,0 +1,7 @@
+**
+!backend/
+!backend/target/
+!backend/target/erp-backend-0.1.0-SNAPSHOT.jar
+!infrastructure/
+!infrastructure/Dockerfile.backend-artifact
+!infrastructure/Dockerfile.backend-artifact.dockerignore

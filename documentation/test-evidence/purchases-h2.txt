@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: br.com.erp.PurchaseTest
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.53 s -- in br.com.erp.PurchaseTest

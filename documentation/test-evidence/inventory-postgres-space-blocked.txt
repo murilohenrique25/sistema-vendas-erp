@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------
+Test set: br.com.erp.InventoryPostgresIT
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.188 s <<< FAILURE! -- in br.com.erp.InventoryPostgresIT
+br.com.erp.InventoryPostgresIT -- Time elapsed: 0.188 s <<< ERROR!
+org.testcontainers.containers.ContainerLaunchException: Container startup failed for image postgres:17.6-alpine
+	at org.testcontainers.containers.GenericContainer.doStart(GenericContainer.java:351)
+	at org.testcontainers.containers.GenericContainer.start(GenericContainer.java:322)
+	at org.testcontainers.junit.jupiter.TestcontainersExtension$StoreAdapter.start(TestcontainersExtension.java:276)
+	at org.testcontainers.junit.jupiter.TestcontainersExtension$StoreAdapter.access$200(TestcontainersExtension.java:263)
+	at org.testcontainers.junit.jupiter.TestcontainersExtension.lambda$startContainers$4(TestcontainersExtension.java:83)
+	at org.testcontainers.junit.jupiter.TestcontainersExtension.lambda$startContainers$5(TestcontainersExtension.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testcontainers.junit.jupiter.TestcontainersExtension.startContainers(TestcontainersExtension.java:83)
+	at org.testcontainers.junit.jupiter.TestcontainersExtension.beforeAll(TestcontainersExtension.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: org.rnorth.ducttape.RetryCountExceededException: Retry limit hit with exception
+	at org.rnorth.ducttape.unreliables.Unreliables.retryUntilSuccess(Unreliables.java:88)
+	at org.testcontainers.containers.GenericContainer.doStart(GenericContainer.java:336)
+	... 9 more
+Caused by: org.testcontainers.containers.ContainerLaunchException: Could not create/start container
+	at org.testcontainers.containers.GenericContainer.tryStart(GenericContainer.java:556)
+	at org.testcontainers.containers.GenericContainer.lambda$doStart$0(GenericContainer.java:346)
+	at org.rnorth.ducttape.unreliables.Unreliables.retryUntilSuccess(Unreliables.java:81)
+	... 10 more
+Caused by: com.github.dockerjava.api.exception.InternalServerErrorException: Status 500: {"message":"mkdir /var/lib/docker/overlay2/94eec7e85580b9a1dadbbb890c546f0b3c829f78db554ceeec8ef78e197a823c-init: read-only file system"}
+
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:247)
+	at org.testcontainers.shaded.com.github.dockerjava.core.DefaultInvocationBuilder.post(DefaultInvocationBuilder.java:124)
+	at org.testcontainers.shaded.com.github.dockerjava.core.exec.CreateContainerCmdExec.execute(CreateContainerCmdExec.java:37)
+	at org.testcontainers.shaded.com.github.dockerjava.core.exec.CreateContainerCmdExec.execute(CreateContainerCmdExec.java:13)
+	at org.testcontainers.shaded.com.github.dockerjava.core.exec.AbstrSyncDockerCmdExec.exec(AbstrSyncDockerCmdExec.java:21)
+	at org.testcontainers.shaded.com.github.dockerjava.core.command.AbstrDockerCmd.exec(AbstrDockerCmd.java:33)
+	at org.testcontainers.shaded.com.github.dockerjava.core.command.CreateContainerCmdImpl.exec(CreateContainerCmdImpl.java:608)
+	at org.testcontainers.containers.GenericContainer.tryStart(GenericContainer.java:430)
+	... 12 more
+

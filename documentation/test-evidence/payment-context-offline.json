@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-11",
+  "scope": "POS session selection and payment reconfirmation",
+  "unitTests": { "total": 42, "passed": 42, "failed": 0, "skipped": 0, "allocationAndComposer": 30, "sessionContextRules": 12 },
+  "angularProductionBuild": "passed",
+  "initialBundleKB": 477.62,
+  "posSalesLazyBundleKB": 91.92,
+  "databaseAccessed": false,
+  "dockerStartedOrUpdated": false,
+  "backendChanged": false,
+  "deployed": false,
+  "browserAndRealLogin": "deferred",
+  "limitations": "Rule tests and compilation; no integration tests or browser interaction"
+}

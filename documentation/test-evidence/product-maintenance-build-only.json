@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-11",
+  "scope": "Versioned product editing, activation and catalog status filter",
+  "backendPackage": "passed with -Dmaven.test.skip=true",
+  "frontendProductionBuild": "passed",
+  "testsWrittenThisStage": false,
+  "testsExecutedThisStage": false,
+  "databaseAccessed": false,
+  "sqlOrJpqlExecuted": false,
+  "schemaChanged": false,
+  "dockerStartedOrUpdated": false,
+  "deployed": false,
+  "functionalAndConcurrencyValidation": "deferred to final testing stage by user instruction",
+  "realLoginAndVisualReview": "deferred"
+}

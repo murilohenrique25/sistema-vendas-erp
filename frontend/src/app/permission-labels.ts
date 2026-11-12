@@ -1,0 +1,17 @@
+export const permissionLabels: Record<string,string> = {'fiscal:read':'Consultar módulo fiscal','fiscal:configure':'Configurar emitente e certificado fiscal','fiscal:issue':'Emitir documentos fiscais','fiscal:cancel':'Cancelar documentos fiscais','inventory:approve':'Aprovar inventário físico','salesorder:read':'Consultar pedidos e orçamentos','salesorder:write':'Editar pedidos e orçamentos','salesorder:approve':'Aprovar pedidos e orçamentos','commercial:read':'Consultar regras comerciais','commercial:write':'Gerenciar regras comerciais',
+  'receivable:credit': 'Abater títulos e reembolsar parcelas em devoluções de crediário', 'pos:credit': 'Concluir vendas a prazo com geração de recebíveis', 'customer:credit': 'Configurar limite e bloqueio de crédito do cliente (todas as filiais)', 'pos:discount': 'Aplicar e solicitar descontos', 'pos:discount-approve': 'Decidir descontos de outro operador', 'pos:discount-policy': 'Configurar limite de desconto por filial', 'pos:suspend': 'Suspender, retomar e descartar carrinhos', 'pos:return': 'Registrar devoluções e reembolsos em caixa aberto', 'pos:cancel': 'Cancelar venda integral e reverter estoque/recebimentos', 'pos:sell': 'Concluir vendas com pagamentos conferidos e baixar estoque', 'pos:read': 'Consultar terminais e caixas', 'pos:manage': 'Cadastrar e ativar terminais', 'pos:operate': 'Abrir e movimentar caixa', 'pos:close': 'Fechar caixa', 'pos:supervise': 'Operar e fechar caixa de outro operador (com demais permissões)',
+  'reconciliation:read': 'Consultar extratos e conciliação', 'reconciliation:import': 'Importar lançamentos de extrato', 'reconciliation:review': 'Conciliar, ignorar ou desfazer revisão de extrato',
+  'cashflow:read': 'Consultar fluxo de caixa (requer leituras financeiras)',
+  'customer:read': 'Consultar clientes', 'customer:write': 'Administrar clientes',
+  'receivable:read': 'Consultar contas a receber', 'receivable:write': 'Criar ou cancelar títulos a receber', 'receivable:receive': 'Registrar recebimentos', 'receivable:reverse': 'Estornar recebimentos',
+  'treasury:read': 'Consultar contas e extratos', 'treasury:write': 'Cadastrar contas de caixa e banco', 'treasury:move': 'Registrar lançamentos e transferências internas',
+  'payable:read': 'Consultar contas a pagar', 'payable:write': 'Criar ou cancelar títulos', 'payable:pay': 'Registrar pagamentos de títulos', 'payable:reverse': 'Estornar registros de pagamento',
+  'purchase:read': 'Consultar compras', 'purchase:write': 'Criar ou cancelar pedidos', 'purchase:receive': 'Receber mercadorias de pedidos',
+  'supplier:read': 'Consultar fornecedores', 'supplier:write': 'Administrar fornecedores',
+  'user:read': 'Consultar usuários', 'user:write': 'Administrar usuários',
+  'branch:read': 'Consultar filiais', 'branch:write': 'Cadastrar filiais',
+  'product:read': 'Consultar produtos', 'product:write': 'Cadastrar produtos',
+  'audit:read': 'Consultar auditoria', 'inventory:read': 'Consultar estoque',
+  'inventory:write': 'Movimentar estoque', 'inventory:cost': 'Consultar custos',
+  'loss:read': 'Consultar perdas', 'loss:create': 'Registrar perdas', 'loss:approve': 'Aprovar ou rejeitar perdas'
+};

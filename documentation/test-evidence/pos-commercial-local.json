@@ -1,0 +1,20 @@
+{
+  "Health": "UP",
+  "SalesPage": 200,
+  "Assets": {
+    "chunk-FQBZPQ7T.js": 200,
+    "styles-7YASRQJT.css": 200,
+    "chunk-5ZOALB3V.js": 200,
+    "chunk-4NDXH6QA.js": 200,
+    "chunk-DSNYO7HW.js": 200,
+    "main-JV6UK6R6.js": 200
+  },
+  "AnonymousApis": {
+    "/api/v1/pos/suspensions": 401,
+    "/api/v1/pos/discount-requests": 401,
+    "/api/v1/pos/discount-policies/00000000-0000-0000-0000-000000000000": 401
+  },
+  "Migration": "22",
+  "TenantSalePolicyApprovalSuspensionCommandCounts": "0|0|0|0|0|0",
+  "Timestamp": "2026-10-15T12:05:06.9076202+00:00"
+}

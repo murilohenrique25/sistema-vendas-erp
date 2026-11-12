@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-11",
+  "scope": "Payables filters, aggregate totals and purchase receipt navigation",
+  "backendPackage": "passed with -Dmaven.test.skip=true",
+  "frontendProductionBuild": "passed",
+  "initialBundleKB": 477.02,
+  "payablesLazyBundleKB": 26.84,
+  "testsWrittenThisStage": false,
+  "testsExecutedThisStage": false,
+  "sqlExecuted": false,
+  "databaseAccessed": false,
+  "schemaChangedThisStage": false,
+  "migrations27And28Applied": false,
+  "dockerStartedOrUpdated": false,
+  "deployed": false,
+  "pending": "Functional, SQL, aggregate consistency, authorization and browser validation"
+}

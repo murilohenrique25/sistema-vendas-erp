@@ -1,0 +1,314 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< br.com.erp:erp-backend >-----------------------
+[INFO] Building erp-backend 0.1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ erp-backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 22 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ erp-backend ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 77 source files with javac [debug parameters release 21] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ erp-backend ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ erp-backend ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 50 source files with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ erp-backend ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running br.com.erp.SaleCreditTest
+09:36:17.015 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [br.com.erp.SaleCreditTest]: SaleCreditTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:36:17.309 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.SaleCreditTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-16T09:36:18.392-03:00  INFO 13400 --- [           main] br.com.erp.SaleCreditTest                : Starting SaleCreditTest using Java 21.0.12.1 with PID 13400 (started by user in C:\Users\user\Documents\dev\sistema-vendas-erp\backend)
+2026-10-16T09:36:18.395-03:00  INFO 13400 --- [           main] br.com.erp.SaleCreditTest                : The following 1 profile is active: "test"
+2026-10-16T09:36:21.696-03:00  INFO 13400 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-16T09:36:21.912-03:00  INFO 13400 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 195 ms. Found 2 JPA repository interfaces.
+2026-10-16T09:36:23.986-03:00  INFO 13400 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-16T09:36:24.449-03:00  INFO 13400 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:erp user=SA
+2026-10-16T09:36:24.455-03:00  INFO 13400 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-16T09:36:24.560-03:00  INFO 13400 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:erp (H2 2.3)
+2026-10-16T09:36:24.690-03:00  INFO 13400 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-10-16T09:36:24.695-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 24 migrations (execution time 00:00.078s)
+2026-10-16T09:36:24.710-03:00  INFO 13400 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-10-16T09:36:24.798-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2026-10-16T09:36:24.818-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - foundation"
+2026-10-16T09:36:24.895-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "2 - product catalog"
+2026-10-16T09:36:24.933-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "3 - barcode key length"
+2026-10-16T09:36:24.969-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "4 - inventory and losses"
+2026-10-16T09:36:25.032-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "5 - user version"
+2026-10-16T09:36:25.065-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "6 - access profiles"
+2026-10-16T09:36:25.082-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "7 - branch access"
+2026-10-16T09:36:25.110-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "8 - suppliers"
+2026-10-16T09:36:25.124-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "9 - purchase orders"
+2026-10-16T09:36:25.163-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "10 - accounts payable"
+2026-10-16T09:36:25.194-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "11 - treasury"
+2026-10-16T09:36:25.228-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "12 - payable treasury link"
+2026-10-16T09:36:25.340-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "13 - customers"
+2026-10-16T09:36:25.349-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "14 - treasury receivable origins"
+2026-10-16T09:36:25.377-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "15 - accounts receivable"
+2026-10-16T09:36:25.529-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "16 - cash flow indexes"
+2026-10-16T09:36:25.549-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "17 - bank reconciliation"
+2026-10-16T09:36:25.589-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "18 - pos cash sessions"
+2026-10-16T09:36:25.633-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "19 - pos sales"
+2026-10-16T09:36:25.686-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "20 - sale payments and cancellation"
+2026-10-16T09:36:25.828-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "21 - sale returns"
+2026-10-16T09:36:25.914-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "22 - pos discounts and suspensions"
+2026-10-16T09:36:26.049-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "23 - receivable installments"
+2026-10-16T09:36:26.063-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "24 - pos on account"
+2026-10-16T09:36:26.120-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 24 migrations to schema "PUBLIC", now at version v24 (execution time 00:01.022s)
+2026-10-16T09:36:26.313-03:00  INFO 13400 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-16T09:36:26.423-03:00  INFO 13400 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-10-16T09:36:26.474-03:00  INFO 13400 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-10-16T09:36:27.105-03:00  INFO 13400 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-16T09:36:27.230-03:00  INFO 13400 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-16T09:36:28.816-03:00  INFO 13400 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-16T09:36:28.866-03:00  INFO 13400 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-16T09:36:30.524-03:00  INFO 13400 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-16T09:36:33.331-03:00  INFO 13400 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-10-16T09:36:34.147-03:00  INFO 13400 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-16T09:36:34.148-03:00  INFO 13400 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-16T09:36:34.150-03:00  INFO 13400 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2026-10-16T09:36:34.258-03:00  INFO 13400 --- [           main] br.com.erp.SaleCreditTest                : Started SaleCreditTest in 16.677 seconds (process running for 18.545)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\user\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.07 s -- in br.com.erp.SaleCreditTest
+[INFO] Running br.com.erp.SalePaymentMigrationTest
+2026-10-16T09:36:48.918-03:00  INFO 13400 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:upgrade-c82af7f4-d1f9-4484-8670-8998ee76cbf6 (H2 2.3)
+2026-10-16T09:36:48.957-03:00  INFO 13400 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-10-16T09:36:48.958-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 24 migrations (execution time 00:00.025s)
+2026-10-16T09:36:48.959-03:00  INFO 13400 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-10-16T09:36:48.965-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2026-10-16T09:36:48.968-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - foundation"
+2026-10-16T09:36:48.978-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "2 - product catalog"
+2026-10-16T09:36:48.985-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "3 - barcode key length"
+2026-10-16T09:36:48.992-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "4 - inventory and losses"
+2026-10-16T09:36:49.006-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "5 - user version"
+2026-10-16T09:36:49.012-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "6 - access profiles"
+2026-10-16T09:36:49.018-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "7 - branch access"
+2026-10-16T09:36:49.026-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "8 - suppliers"
+2026-10-16T09:36:49.033-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "9 - purchase orders"
+2026-10-16T09:36:49.047-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "10 - accounts payable"
+2026-10-16T09:36:49.059-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "11 - treasury"
+2026-10-16T09:36:49.069-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "12 - payable treasury link"
+2026-10-16T09:36:49.088-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "13 - customers"
+2026-10-16T09:36:49.091-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "14 - treasury receivable origins"
+2026-10-16T09:36:49.100-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "15 - accounts receivable"
+2026-10-16T09:36:49.123-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "16 - cash flow indexes"
+2026-10-16T09:36:49.129-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "17 - bank reconciliation"
+2026-10-16T09:36:49.143-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "18 - pos cash sessions"
+2026-10-16T09:36:49.155-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "19 - pos sales"
+2026-10-16T09:36:49.167-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 19 migrations to schema "PUBLIC", now at version v19 (execution time 00:00.114s)
+2026-10-16T09:36:49.197-03:00  INFO 13400 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:upgrade-c82af7f4-d1f9-4484-8670-8998ee76cbf6 (H2 2.3)
+2026-10-16T09:36:49.229-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 24 migrations (execution time 00:00.027s)
+2026-10-16T09:36:49.230-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 19
+2026-10-16T09:36:49.235-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "20 - sale payments and cancellation"
+2026-10-16T09:36:49.280-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "21 - sale returns"
+2026-10-16T09:36:49.298-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "22 - pos discounts and suspensions"
+2026-10-16T09:36:49.431-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "23 - receivable installments"
+2026-10-16T09:36:49.444-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "24 - pos on account"
+2026-10-16T09:36:49.482-03:00  INFO 13400 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 5 migrations to schema "PUBLIC", now at version v24 (execution time 00:00.224s)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.672 s -- in br.com.erp.SalePaymentMigrationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ erp-backend ---
+[INFO] Building jar: C:\Users\user\Documents\dev\sistema-vendas-erp\backend\target\erp-backend-0.1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:3.5.16:repackage (repackage) @ erp-backend ---
+[INFO] Replacing main artifact C:\Users\user\Documents\dev\sistema-vendas-erp\backend\target\erp-backend-0.1.0-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\user\Documents\dev\sistema-vendas-erp\backend\target\erp-backend-0.1.0-SNAPSHOT.jar.original
+[INFO] 
+[INFO] --- failsafe:3.5.6:integration-test (default) @ erp-backend ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running br.com.erp.SaleCreditPostgresIT
+09:36:53.447 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [br.com.erp.SaleCreditPostgresIT]: SaleCreditPostgresIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:36:53.812 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.SaleCreditPostgresIT
+09:36:54.057 [main] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
+09:36:54.061 [main] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+09:36:54.119 [main] INFO org.testcontainers.DockerClientFactory -- Testcontainers version: 1.21.3
+09:36:54.480 [main] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+09:36:54.914 [main] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+09:36:54.916 [main] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
+09:36:54.945 [main] INFO org.testcontainers.DockerClientFactory -- Connected to docker: 
+  Server Version: 29.3.1
+  API Version: 1.54
+  Operating System: Docker Desktop
+  Total Memory: 6908 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+09:36:55.006 [main] INFO tc.testcontainers/ryuk:0.12.0 -- Creating container for image: testcontainers/ryuk:0.12.0
+09:36:55.113 [main] INFO org.testcontainers.utility.RegistryAuthLocator -- Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+09:36:55.340 [main] INFO tc.testcontainers/ryuk:0.12.0 -- Container testcontainers/ryuk:0.12.0 is starting: 5fb671ba00de91134bf20ebdf5b1f9508c045a637c11fc466c148f92c1f82900
+09:36:55.917 [main] INFO tc.testcontainers/ryuk:0.12.0 -- Container testcontainers/ryuk:0.12.0 started in PT0.9112095S
+09:36:55.944 [main] INFO org.testcontainers.utility.RyukResourceReaper -- Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+09:36:55.945 [main] INFO org.testcontainers.DockerClientFactory -- Checking the system...
+09:36:55.946 [main] INFO org.testcontainers.DockerClientFactory -- ✔︎ Docker server version should be at least 1.6.0
+09:36:55.948 [main] INFO tc.postgres:17.6-alpine -- Creating container for image: postgres:17.6-alpine
+09:36:56.152 [main] INFO tc.postgres:17.6-alpine -- Container postgres:17.6-alpine is starting: d1b8d4f5340ea0a81a228dc77845c9e97ddbdde66bbaf14d47c759ac9e85521d
+09:36:58.374 [main] INFO tc.postgres:17.6-alpine -- Container postgres:17.6-alpine started in PT2.4251187S
+09:36:58.374 [main] INFO tc.postgres:17.6-alpine -- Container is started (JDBC URL: jdbc:postgresql://localhost:65505/test?loggerLevel=OFF)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-16T09:36:59.063-03:00  INFO 12504 --- [           main] br.com.erp.SaleCreditPostgresIT          : Starting SaleCreditPostgresIT using Java 21.0.12.1 with PID 12504 (started by user in C:\Users\user\Documents\dev\sistema-vendas-erp\backend)
+2026-10-16T09:36:59.065-03:00  INFO 12504 --- [           main] br.com.erp.SaleCreditPostgresIT          : The following 1 profile is active: "test"
+2026-10-16T09:37:01.551-03:00  INFO 12504 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-16T09:37:01.695-03:00  INFO 12504 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 2 JPA repository interfaces.
+2026-10-16T09:37:02.889-03:00  INFO 12504 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-16T09:37:03.190-03:00  INFO 12504 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e04b8a0
+2026-10-16T09:37:03.191-03:00  INFO 12504 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-16T09:37:03.232-03:00  INFO 12504 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:65505/test?loggerLevel=OFF (PostgreSQL 17.6)
+2026-10-16T09:37:03.333-03:00  INFO 12504 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2026-10-16T09:37:03.339-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 24 migrations (execution time 00:00.066s)
+2026-10-16T09:37:03.376-03:00  INFO 12504 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2026-10-16T09:37:03.478-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2026-10-16T09:37:03.508-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - foundation"
+2026-10-16T09:37:03.610-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - product catalog"
+2026-10-16T09:37:03.687-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - barcode key length"
+2026-10-16T09:37:03.730-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "4 - inventory and losses"
+2026-10-16T09:37:03.820-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "5 - user version"
+2026-10-16T09:37:03.855-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "6 - access profiles"
+2026-10-16T09:37:03.910-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "7 - branch access"
+2026-10-16T09:37:03.950-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "8 - suppliers"
+2026-10-16T09:37:03.982-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "9 - purchase orders"
+2026-10-16T09:37:04.036-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "10 - accounts payable"
+2026-10-16T09:37:04.084-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "11 - treasury"
+2026-10-16T09:37:04.130-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "12 - payable treasury link"
+2026-10-16T09:37:04.174-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "13 - customers"
+2026-10-16T09:37:04.202-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "14 - treasury receivable origins"
+2026-10-16T09:37:04.248-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "15 - accounts receivable"
+2026-10-16T09:37:04.335-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "16 - cash flow indexes"
+2026-10-16T09:37:04.370-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "17 - bank reconciliation"
+2026-10-16T09:37:04.433-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "18 - pos cash sessions"
+2026-10-16T09:37:04.488-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "19 - pos sales"
+2026-10-16T09:37:04.545-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "20 - sale payments and cancellation"
+2026-10-16T09:37:04.621-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "21 - sale returns"
+2026-10-16T09:37:04.681-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "22 - pos discounts and suspensions"
+2026-10-16T09:37:04.756-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "23 - receivable installments"
+2026-10-16T09:37:04.791-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "24 - pos on account"
+2026-10-16T09:37:04.848-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 24 migrations to schema "public", now at version v24 (execution time 00:00.819s)
+2026-10-16T09:37:05.010-03:00  INFO 12504 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-16T09:37:05.088-03:00  INFO 12504 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-10-16T09:37:05.133-03:00  INFO 12504 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-10-16T09:37:05.553-03:00  INFO 12504 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-16T09:37:05.676-03:00  INFO 12504 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-16T09:37:06.969-03:00  INFO 12504 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-16T09:37:07.051-03:00  INFO 12504 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-16T09:37:08.836-03:00  INFO 12504 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-16T09:37:11.639-03:00  INFO 12504 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-10-16T09:37:12.372-03:00  INFO 12504 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-16T09:37:12.372-03:00  INFO 12504 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-16T09:37:12.373-03:00  INFO 12504 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-10-16T09:37:12.470-03:00  INFO 12504 --- [           main] br.com.erp.SaleCreditPostgresIT          : Started SaleCreditPostgresIT in 14.029 seconds (process running for 20.17)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (C:\Users\user\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 40.27 s -- in br.com.erp.SaleCreditPostgresIT
+[INFO] Running br.com.erp.SalePaymentMigrationPostgresIT
+2026-10-16T09:37:33.509-03:00  INFO 12504 --- [           main] tc.postgres:17.6-alpine                  : Creating container for image: postgres:17.6-alpine
+2026-10-16T09:37:33.681-03:00  INFO 12504 --- [           main] tc.postgres:17.6-alpine                  : Container postgres:17.6-alpine is starting: eb359bcd699363a114a0b192261556e634616ed280d0e2d843f6956cc1df7b7e
+2026-10-16T09:37:35.931-03:00  INFO 12504 --- [           main] tc.postgres:17.6-alpine                  : Container postgres:17.6-alpine started in PT2.422274S
+2026-10-16T09:37:35.931-03:00  INFO 12504 --- [           main] tc.postgres:17.6-alpine                  : Container is started (JDBC URL: jdbc:postgresql://localhost:65518/test?loggerLevel=OFF)
+2026-10-16T09:37:35.987-03:00  INFO 12504 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:65518/test?loggerLevel=OFF (PostgreSQL 17.6)
+2026-10-16T09:37:36.031-03:00  INFO 12504 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2026-10-16T09:37:36.034-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 24 migrations (execution time 00:00.026s)
+2026-10-16T09:37:36.052-03:00  INFO 12504 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2026-10-16T09:37:36.101-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2026-10-16T09:37:36.108-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - foundation"
+2026-10-16T09:37:36.169-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - product catalog"
+2026-10-16T09:37:36.210-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - barcode key length"
+2026-10-16T09:37:36.242-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "4 - inventory and losses"
+2026-10-16T09:37:36.303-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "5 - user version"
+2026-10-16T09:37:36.325-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "6 - access profiles"
+2026-10-16T09:37:36.359-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "7 - branch access"
+2026-10-16T09:37:36.390-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "8 - suppliers"
+2026-10-16T09:37:36.424-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "9 - purchase orders"
+2026-10-16T09:37:36.484-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "10 - accounts payable"
+2026-10-16T09:37:36.559-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "11 - treasury"
+2026-10-16T09:37:36.626-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "12 - payable treasury link"
+2026-10-16T09:37:36.687-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "13 - customers"
+2026-10-16T09:37:36.735-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "14 - treasury receivable origins"
+2026-10-16T09:37:36.777-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "15 - accounts receivable"
+2026-10-16T09:37:36.841-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "16 - cash flow indexes"
+2026-10-16T09:37:36.870-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "17 - bank reconciliation"
+2026-10-16T09:37:36.934-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "18 - pos cash sessions"
+2026-10-16T09:37:36.996-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "19 - pos sales"
+2026-10-16T09:37:37.042-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 19 migrations to schema "public", now at version v19 (execution time 00:00.575s)
+2026-10-16T09:37:37.324-03:00  INFO 12504 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:65518/test?loggerLevel=OFF (PostgreSQL 17.6)
+2026-10-16T09:37:37.368-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 24 migrations (execution time 00:00.028s)
+2026-10-16T09:37:37.402-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 19
+2026-10-16T09:37:37.411-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "20 - sale payments and cancellation"
+2026-10-16T09:37:37.509-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "21 - sale returns"
+2026-10-16T09:37:37.623-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "22 - pos discounts and suspensions"
+2026-10-16T09:37:37.737-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "23 - receivable installments"
+2026-10-16T09:37:37.827-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "24 - pos on account"
+2026-10-16T09:37:37.959-03:00  INFO 12504 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 5 migrations to schema "public", now at version v24 (execution time 00:00.379s)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.439 s -- in br.com.erp.SalePaymentMigrationPostgresIT
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- failsafe:3.5.6:verify (default) @ erp-backend ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:38 min
+[INFO] Finished at: 2026-10-16T09:37:39-03:00
+[INFO] ------------------------------------------------------------------------

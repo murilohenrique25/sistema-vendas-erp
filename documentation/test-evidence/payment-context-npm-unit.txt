@@ -1,0 +1,224 @@
+
+> erp-frontend@0.1.0 test:unit
+> node --test tests
+
+TAP version 13
+# Subtest: cash change uses exact cents
+ok 1 - cash change uses exact cents
+  ---
+  duration_ms: 3.8897
+  ...
+# Subtest: mixed payment and change
+ok 2 - mixed payment and change
+  ---
+  duration_ms: 0.6333
+  ...
+# Subtest: remaining is not treated as received
+ok 3 - remaining is not treated as received
+  ---
+  duration_ms: 0.4318
+  ...
+# Subtest: excess application is not cash change
+ok 4 - excess application is not cash change
+  ---
+  duration_ms: 0.302
+  ...
+# Subtest: empty split remains pending
+ok 5 - empty split remains pending
+  ---
+  duration_ms: 0.307
+  ...
+# Subtest: bank requires explicit confirmation
+ok 6 - bank requires explicit confirmation
+  ---
+  duration_ms: 0.6842
+  ...
+# Subtest: bank overpayment cannot produce change
+ok 7 - bank overpayment cannot produce change
+  ---
+  duration_ms: 0.5642
+  ...
+# Subtest: cash underpayment cannot pass
+ok 8 - cash underpayment cannot pass
+  ---
+  duration_ms: 0.3705
+  ...
+# Subtest: only one cash line
+ok 9 - only one cash line
+  ---
+  duration_ms: 0.6159
+  ...
+# Subtest: duplicate bank proof normalized by trim
+ok 10 - duplicate bank proof normalized by trim
+  ---
+  duration_ms: 0.8769
+  ...
+# Subtest: proof namespaces include account and method
+ok 11 - proof namespaces include account and method
+  ---
+  duration_ms: 0.6097
+  ...
+# Subtest: invalid decimal inputs never throw
+ok 12 - invalid decimal inputs never throw
+  ---
+  duration_ms: 0.5247
+  ...
+# Subtest: large exact amounts avoid Number precision loss
+ok 13 - large exact amounts avoid Number precision loss
+  ---
+  duration_ms: 0.2998
+  ...
+# Subtest: aggregate receipt overflow rejected
+ok 14 - aggregate receipt overflow rejected
+  ---
+  duration_ms: 0.5753
+  ...
+# Subtest: legacy cash and split cannot combine
+ok 15 - legacy cash and split cannot combine
+  ---
+  duration_ms: 0.3032
+  ...
+# Subtest: suggestion fills remaining with exact cents
+ok 16 - suggestion fills remaining with exact cents
+  ---
+  duration_ms: 0.7114
+  ...
+# Subtest: suggestion excludes edited line
+ok 17 - suggestion excludes edited line
+  ---
+  duration_ms: 0.4184
+  ...
+# Subtest: no suggestion when fully allocated or invalid
+ok 18 - no suggestion when fully allocated or invalid
+  ---
+  duration_ms: 0.5193
+  ...
+# Subtest: add allows incomplete local allocation
+ok 19 - add allows incomplete local allocation
+  ---
+  duration_ms: 0.9479
+  ...
+# Subtest: editing replaces without duplicating proof
+ok 20 - editing replaces without duplicating proof
+  ---
+  duration_ms: 1.41
+  ...
+# Subtest: over allocation fails without mutating inputs
+ok 21 - over allocation fails without mutating inputs
+  ---
+  duration_ms: 0.598
+  ...
+# Subtest: editing cannot duplicate another line proof
+ok 22 - editing cannot duplicate another line proof
+  ---
+  duration_ms: 0.8425
+  ...
+# Subtest: editing cash does not create second cash line
+ok 23 - editing cash does not create second cash line
+  ---
+  duration_ms: 0.6802
+  ...
+# Subtest: invalid edit indexes rejected
+ok 24 - invalid edit indexes rejected
+  ---
+  duration_ms: 0.5658
+  ...
+# Subtest: normalization does not change draft or original list
+ok 25 - normalization does not change draft or original list
+  ---
+  duration_ms: 0.4249
+  ...
+# Subtest: bank edits still require explicit confirmation
+ok 26 - bank edits still require explicit confirmation
+  ---
+  duration_ms: 0.3925
+  ...
+# Subtest: append limit and edit at limit
+ok 27 - append limit and edit at limit
+  ---
+  duration_ms: 4.8481
+  ...
+# Subtest: session reconfirmations can be fixed one row at a time
+ok 28 - session reconfirmations can be fixed one row at a time
+  ---
+  duration_ms: 0.6326
+  ...
+# Subtest: cash may be corrected before unconfirmed bank row
+ok 29 - cash may be corrected before unconfirmed bank row
+  ---
+  duration_ms: 0.4516
+  ...
+# Subtest: unconfirmed rows still count toward suggestion and over allocation
+ok 30 - unconfirmed rows still count toward suggestion and over allocation
+  ---
+  duration_ms: 0.4318
+  ...
+# Subtest: same branch keeps proposal and proof but requires confirmation
+ok 31 - same branch keeps proposal and proof but requires confirmation
+  ---
+  duration_ms: 3.238
+  ...
+# Subtest: branch change clears bank account
+ok 32 - branch change clears bank account
+  ---
+  duration_ms: 0.4136
+  ...
+# Subtest: cash keeps applied amount but clears amount physically received
+ok 33 - cash keeps applied amount but clears amount physically received
+  ---
+  duration_ms: 0.3626
+  ...
+# Subtest: reset does not mutate original proposals
+ok 34 - reset does not mutate original proposals
+  ---
+  duration_ms: 0.4581
+  ...
+# Subtest: empty proposals stay empty
+ok 35 - empty proposals stay empty
+  ---
+  duration_ms: 1.7238
+  ...
+# Subtest: transfer confirmation also resets
+ok 36 - transfer confirmation also resets
+  ---
+  duration_ms: 0.6554
+  ...
+# Subtest: operator may use own open session
+ok 37 - operator may use own open session
+  ---
+  duration_ms: 0.4152
+  ...
+# Subtest: other operator needs supervision
+ok 38 - other operator needs supervision
+  ---
+  duration_ms: 0.3117
+  ...
+# Subtest: closed session cannot be used even by supervisor
+ok 39 - closed session cannot be used even by supervisor
+  ---
+  duration_ms: 0.5884
+  ...
+# Subtest: suspension stays within its branch
+ok 40 - suspension stays within its branch
+  ---
+  duration_ms: 0.5655
+  ...
+# Subtest: pending checkout requires original session
+ok 41 - pending checkout requires original session
+  ---
+  duration_ms: 0.3767
+  ...
+# Subtest: supervision cannot bypass draft or checkout restrictions
+ok 42 - supervision cannot bypass draft or checkout restrictions
+  ---
+  duration_ms: 0.326
+  ...
+1..42
+# tests 42
+# suites 0
+# pass 42
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 663.4914

@@ -1,0 +1,26 @@
+{
+  "Health": "UP",
+  "Pages": {
+    "receivables": 200,
+    "pos-sales": 200
+  },
+  "Assets": {
+    "chunk-OI4TY7LB.js": 200,
+    "chunk-FWAC4YJL.js": 200,
+    "chunk-YJB2LJYL.js": 200,
+    "styles-7YASRQJT.css": 200,
+    "chunk-EWWNWVRD.js": 200,
+    "chunk-U3J7OXSH.js": 200,
+    "main-PZRSAXDH.js": 200,
+    "chunk-X7A7WAU7.js": 200
+  },
+  "AnonymousApis": {
+    "/api/v1/receivables/00000000-0000-0000-0000-000000000000/adjustments": 401,
+    "POST return": 401,
+    "/api/v1/pos/sales/00000000-0000-0000-0000-000000000000/returns/credit-receipts": 401
+  },
+  "Migration": "25",
+  "ReceivableColumnNullability": "credited_amount|NO\r\nreceived_amount|NO",
+  "TenantReturnDebtCreditReceiptRefundCreditedTitleCounts": "0|0|0|0|0",
+  "Timestamp": "2026-10-16T14:24:19.0886660+00:00"
+}

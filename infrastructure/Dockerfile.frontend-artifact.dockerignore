@@ -1,0 +1,10 @@
+**
+!infrastructure/
+!infrastructure/nginx.conf
+!infrastructure/Dockerfile.frontend-artifact
+!infrastructure/Dockerfile.frontend-artifact.dockerignore
+!frontend/
+!frontend/dist/
+!frontend/dist/erp/
+!frontend/dist/erp/browser/
+!frontend/dist/erp/browser/**

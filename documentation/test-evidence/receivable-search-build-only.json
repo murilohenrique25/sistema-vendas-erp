@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-11",
+  "scope": "Receivable filters, current adjusted totals and installment origin",
+  "backendPackage": "passed with -Dmaven.test.skip=true",
+  "frontendProductionBuild": "passed",
+  "initialBundleKB": 476.96,
+  "receivablesLazyBundleKB": 32.24,
+  "testsWrittenThisStage": false,
+  "testsExecutedThisStage": false,
+  "sqlExecuted": false,
+  "databaseAccessed": false,
+  "schemaChangedThisStage": false,
+  "migrations27And28Applied": false,
+  "dockerStartedOrUpdated": false,
+  "deployed": false,
+  "pending": "Functional, SQL, adjusted totals, authorization and browser validation"
+}

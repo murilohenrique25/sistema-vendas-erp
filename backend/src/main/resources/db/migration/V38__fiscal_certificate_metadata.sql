@@ -1,0 +1,3 @@
+ALTER TABLE fiscal_establishment ADD COLUMN certificate_subject VARCHAR(2000);
+ALTER TABLE fiscal_establishment ADD COLUMN certificate_expires_at TIMESTAMP WITH TIME ZONE;
+CREATE TABLE fiscal_service_attempt(id UUID PRIMARY KEY,tenant_id UUID NOT NULL,branch_id UUID NOT NULL,environment VARCHAR(20) NOT NULL,service VARCHAR(30) NOT NULL,status VARCHAR(20) NOT NULL,message VARCHAR(500) NOT NULL,created_by UUID NOT NULL,created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP,FOREIGN KEY(tenant_id,branch_id) REFERENCES branch(tenant_id,id),FOREIGN KEY(tenant_id,created_by) REFERENCES app_user(tenant_id,id));

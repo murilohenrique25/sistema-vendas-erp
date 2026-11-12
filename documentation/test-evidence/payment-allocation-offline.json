@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-11",
+  "scope": "Payment allocation calculator and POS local preview",
+  "databaseAccessed": false,
+  "dockerStartedOrUpdated": false,
+  "java": {
+    "runner": "JUnit Platform via scripts/RunUnitTestsInMemory.java",
+    "compiledSources": ["PaymentAllocation.java", "SalePayments.java", "PaymentAllocationTest.java"],
+    "testsFound": 20,
+    "successful": 20,
+    "failed": 0,
+    "skipped": 0,
+    "fullMavenBuild": "blocked: insufficient disk space writing compiled classes"
+  },
+  "frontend": {
+    "runner": "node --test frontend/tests/payment-allocation.test.cjs",
+    "tests": 15,
+    "passed": 15,
+    "failed": 0,
+    "typeScriptNoEmit": "passed",
+    "angularTemplatesNoEmit": "passed",
+    "productionBuild": "not run"
+  },
+  "integrationTests": "not run: database deferred by user",
+  "deployed": false,
+  "realLoginAndVisualReview": "deferred"
+}

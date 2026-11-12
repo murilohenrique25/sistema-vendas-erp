@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-11",
+  "scope": "Installment preview and atomic payable generation from purchase receipt",
+  "migrationPrepared": "28",
+  "migrations27And28Applied": false,
+  "backendPackage": "passed with -Dmaven.test.skip=true",
+  "frontendProductionBuild": "passed",
+  "testsWrittenThisStage": false,
+  "testsExecutedThisStage": false,
+  "databaseAccessed": false,
+  "sqlExecuted": false,
+  "dockerStartedOrUpdated": false,
+  "deployed": false,
+  "pending": "Upgrade, compatibility, monetary calendar, concurrency, rollback, authorization and interface validation"
+}

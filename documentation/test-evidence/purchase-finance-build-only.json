@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-11",
+  "scope": "Explicit payable generation from purchase receipt and immutable receipt amounts",
+  "migrationPrepared": "27",
+  "migrationApplied": false,
+  "backendPackage": "passed with -Dmaven.test.skip=true",
+  "frontendProductionBuild": "passed",
+  "testsWrittenThisStage": false,
+  "testsExecutedThisStage": false,
+  "databaseAccessed": false,
+  "sqlExecuted": false,
+  "dockerStartedOrUpdated": false,
+  "backupRestoreExecuted": false,
+  "deployed": false,
+  "pending": "Migration, monetary backfill, concurrency, rollback, scope and interface functional validation; tests deferred by user"
+}

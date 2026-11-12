@@ -1,0 +1,145 @@
+TAP version 13
+# Subtest: cash change uses exact cents
+ok 1 - cash change uses exact cents
+  ---
+  duration_ms: 2.2797
+  ...
+# Subtest: mixed payment and change
+ok 2 - mixed payment and change
+  ---
+  duration_ms: 0.4483
+  ...
+# Subtest: remaining is not treated as received
+ok 3 - remaining is not treated as received
+  ---
+  duration_ms: 0.2361
+  ...
+# Subtest: excess application is not cash change
+ok 4 - excess application is not cash change
+  ---
+  duration_ms: 0.2256
+  ...
+# Subtest: empty split remains pending
+ok 5 - empty split remains pending
+  ---
+  duration_ms: 0.23
+  ...
+# Subtest: bank requires explicit confirmation
+ok 6 - bank requires explicit confirmation
+  ---
+  duration_ms: 0.4861
+  ...
+# Subtest: bank overpayment cannot produce change
+ok 7 - bank overpayment cannot produce change
+  ---
+  duration_ms: 0.3019
+  ...
+# Subtest: cash underpayment cannot pass
+ok 8 - cash underpayment cannot pass
+  ---
+  duration_ms: 0.2051
+  ...
+# Subtest: only one cash line
+ok 9 - only one cash line
+  ---
+  duration_ms: 0.3708
+  ...
+# Subtest: duplicate bank proof normalized by trim
+ok 10 - duplicate bank proof normalized by trim
+  ---
+  duration_ms: 0.481
+  ...
+# Subtest: proof namespaces include account and method
+ok 11 - proof namespaces include account and method
+  ---
+  duration_ms: 0.2732
+  ...
+# Subtest: invalid decimal inputs never throw
+ok 12 - invalid decimal inputs never throw
+  ---
+  duration_ms: 0.2954
+  ...
+# Subtest: large exact amounts avoid Number precision loss
+ok 13 - large exact amounts avoid Number precision loss
+  ---
+  duration_ms: 0.2197
+  ...
+# Subtest: aggregate receipt overflow rejected
+ok 14 - aggregate receipt overflow rejected
+  ---
+  duration_ms: 0.3706
+  ...
+# Subtest: legacy cash and split cannot combine
+ok 15 - legacy cash and split cannot combine
+  ---
+  duration_ms: 0.217
+  ...
+# Subtest: suggestion fills remaining with exact cents
+ok 16 - suggestion fills remaining with exact cents
+  ---
+  duration_ms: 0.3353
+  ...
+# Subtest: suggestion excludes edited line
+ok 17 - suggestion excludes edited line
+  ---
+  duration_ms: 0.2159
+  ...
+# Subtest: no suggestion when fully allocated or invalid
+ok 18 - no suggestion when fully allocated or invalid
+  ---
+  duration_ms: 0.3853
+  ...
+# Subtest: add allows incomplete local allocation
+ok 19 - add allows incomplete local allocation
+  ---
+  duration_ms: 0.3398
+  ...
+# Subtest: editing replaces without duplicating proof
+ok 20 - editing replaces without duplicating proof
+  ---
+  duration_ms: 0.3046
+  ...
+# Subtest: over allocation fails without mutating inputs
+ok 21 - over allocation fails without mutating inputs
+  ---
+  duration_ms: 0.3331
+  ...
+# Subtest: editing cannot duplicate another line proof
+ok 22 - editing cannot duplicate another line proof
+  ---
+  duration_ms: 0.2069
+  ...
+# Subtest: editing cash does not create second cash line
+ok 23 - editing cash does not create second cash line
+  ---
+  duration_ms: 0.1691
+  ...
+# Subtest: invalid edit indexes rejected
+ok 24 - invalid edit indexes rejected
+  ---
+  duration_ms: 0.1814
+  ...
+# Subtest: normalization does not change draft or original list
+ok 25 - normalization does not change draft or original list
+  ---
+  duration_ms: 0.1979
+  ...
+# Subtest: bank edits still require explicit confirmation
+ok 26 - bank edits still require explicit confirmation
+  ---
+  duration_ms: 0.1752
+  ...
+# Subtest: append limit and edit at limit
+ok 27 - append limit and edit at limit
+  ---
+  duration_ms: 3.1385
+  ...
+1..27
+# tests 27
+# suites 0
+# pass 27
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 594.866

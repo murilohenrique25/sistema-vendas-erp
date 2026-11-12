@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: br.com.erp.UserPostgresIT
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 33.88 s -- in br.com.erp.UserPostgresIT

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: br.com.erp.FoundationPostgresIT
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 49.97 s -- in br.com.erp.FoundationPostgresIT

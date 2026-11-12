@@ -1,0 +1,27 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.frontend-artifact
+#1 transferring dockerfile: 639B 0.0s done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/nginx:1.28-alpine
+#2 DONE 0.7s
+
+#3 [1/3] FROM docker.io/library/nginx:1.28-alpine@sha256:a8b39bd9cf0f83869a2162827a0caf6137ddf759d50a171451b335cecc87d236
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 600.13kB 0.1s done
+#4 DONE 0.1s
+
+#5 [2/3] COPY infrastructure/nginx.conf /etc/nginx/conf.d/default.conf
+#5 CACHED
+
+#6 [3/3] COPY frontend/dist/erp/browser/ /usr/share/nginx/html/
+#6 DONE 0.1s
+
+#7 exporting to image
+#7 exporting layers 0.0s done
+#7 writing image sha256:e32746a743b2bc6df692ca51fc6656415846babb23f958f1fb30551cbb5600ae done
+#7 naming to docker.io/library/sistema-vendas-erp-frontend done
+#7 DONE 0.1s

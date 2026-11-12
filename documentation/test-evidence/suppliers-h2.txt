@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: br.com.erp.SupplierTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.456 s -- in br.com.erp.SupplierTest

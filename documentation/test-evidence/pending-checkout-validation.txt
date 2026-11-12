@@ -1,0 +1,253 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< br.com.erp:erp-backend >-----------------------
+[INFO] Building erp-backend 0.1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ erp-backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 23 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ erp-backend ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ erp-backend ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ erp-backend ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 56 source files with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ erp-backend ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running br.com.erp.CreditReturnTest
+21:48:23.901 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [br.com.erp.CreditReturnTest]: CreditReturnTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:48:24.407 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.CreditReturnTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-16T21:48:25.624-03:00  INFO 11200 --- [           main] br.com.erp.CreditReturnTest              : Starting CreditReturnTest using Java 21.0.12.1 with PID 11200 (started by user in C:\Users\user\Documents\dev\sistema-vendas-erp\backend)
+2026-10-16T21:48:25.638-03:00  INFO 11200 --- [           main] br.com.erp.CreditReturnTest              : The following 1 profile is active: "test"
+2026-10-16T21:48:28.721-03:00  INFO 11200 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-16T21:48:28.880-03:00  INFO 11200 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 123 ms. Found 2 JPA repository interfaces.
+2026-10-16T21:48:30.329-03:00  INFO 11200 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-16T21:48:30.964-03:00  INFO 11200 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:erp user=SA
+2026-10-16T21:48:30.968-03:00  INFO 11200 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-16T21:48:31.072-03:00  INFO 11200 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:erp (H2 2.3)
+2026-10-16T21:48:31.204-03:00  INFO 11200 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-10-16T21:48:31.209-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 26 migrations (execution time 00:00.091s)
+2026-10-16T21:48:31.222-03:00  INFO 11200 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-10-16T21:48:31.280-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2026-10-16T21:48:31.296-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - foundation"
+2026-10-16T21:48:31.341-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "2 - product catalog"
+2026-10-16T21:48:31.359-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "3 - barcode key length"
+2026-10-16T21:48:31.381-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "4 - inventory and losses"
+2026-10-16T21:48:31.425-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "5 - user version"
+2026-10-16T21:48:31.448-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "6 - access profiles"
+2026-10-16T21:48:31.458-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "7 - branch access"
+2026-10-16T21:48:31.520-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "8 - suppliers"
+2026-10-16T21:48:31.533-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "9 - purchase orders"
+2026-10-16T21:48:31.581-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "10 - accounts payable"
+2026-10-16T21:48:31.618-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "11 - treasury"
+2026-10-16T21:48:31.643-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "12 - payable treasury link"
+2026-10-16T21:48:31.696-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "13 - customers"
+2026-10-16T21:48:31.698-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "14 - treasury receivable origins"
+2026-10-16T21:48:31.726-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "15 - accounts receivable"
+2026-10-16T21:48:31.791-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "16 - cash flow indexes"
+2026-10-16T21:48:31.792-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "17 - bank reconciliation"
+2026-10-16T21:48:31.846-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "18 - pos cash sessions"
+2026-10-16T21:48:31.885-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "19 - pos sales"
+2026-10-16T21:48:31.926-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "20 - sale payments and cancellation"
+2026-10-16T21:48:32.103-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "21 - sale returns"
+2026-10-16T21:48:32.151-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "22 - pos discounts and suspensions"
+2026-10-16T21:48:32.238-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "23 - receivable installments"
+2026-10-16T21:48:32.256-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "24 - pos on account"
+2026-10-16T21:48:32.336-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "25 - credit sale returns"
+2026-10-16T21:48:32.384-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "26 - pending checkouts"
+2026-10-16T21:48:32.413-03:00  INFO 11200 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 26 migrations to schema "PUBLIC", now at version v26 (execution time 00:00.848s)
+2026-10-16T21:48:32.782-03:00  INFO 11200 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-16T21:48:32.953-03:00  INFO 11200 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-10-16T21:48:33.039-03:00  INFO 11200 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-10-16T21:48:33.673-03:00  INFO 11200 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-16T21:48:33.805-03:00  INFO 11200 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-16T21:48:35.238-03:00  INFO 11200 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-16T21:48:35.280-03:00  INFO 11200 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-16T21:48:37.220-03:00  INFO 11200 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-16T21:48:40.039-03:00  INFO 11200 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-10-16T21:48:41.012-03:00  INFO 11200 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-16T21:48:41.012-03:00  INFO 11200 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-16T21:48:41.013-03:00  INFO 11200 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-10-16T21:48:41.114-03:00  INFO 11200 --- [           main] br.com.erp.CreditReturnTest              : Started CreditReturnTest in 16.303 seconds (process running for 18.768)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (C:\Users\user\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.94 s -- in br.com.erp.CreditReturnTest
+[INFO] Running br.com.erp.PendingCheckoutTest
+2026-10-16T21:48:58.524-03:00  INFO 11200 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.PendingCheckoutTest]: PendingCheckoutTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-16T21:48:58.543-03:00  INFO 11200 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.PendingCheckoutTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.998 s -- in br.com.erp.PendingCheckoutTest
+[INFO] Running br.com.erp.SalePaymentTest
+2026-10-16T21:49:07.518-03:00  INFO 11200 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.SalePaymentTest]: SalePaymentTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-16T21:49:07.518-03:00  INFO 11200 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.SalePaymentTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.25 s -- in br.com.erp.SalePaymentTest
+[INFO] Running br.com.erp.SaleTest
+2026-10-16T21:49:21.774-03:00  INFO 11200 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [br.com.erp.SaleTest]: SaleTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-16T21:49:21.777-03:00  INFO 11200 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.SaleTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.92 s -- in br.com.erp.SaleTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 67, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ erp-backend ---
+[INFO] Building jar: C:\Users\user\Documents\dev\sistema-vendas-erp\backend\target\erp-backend-0.1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:3.5.16:repackage (repackage) @ erp-backend ---
+[INFO] Replacing main artifact C:\Users\user\Documents\dev\sistema-vendas-erp\backend\target\erp-backend-0.1.0-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\user\Documents\dev\sistema-vendas-erp\backend\target\erp-backend-0.1.0-SNAPSHOT.jar.original
+[INFO] 
+[INFO] --- failsafe:3.5.6:integration-test (default) @ erp-backend ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running br.com.erp.PendingCheckoutPostgresIT
+21:49:37.586 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [br.com.erp.PendingCheckoutPostgresIT]: PendingCheckoutPostgresIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:49:37.928 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration br.com.erp.ErpApplication for test class br.com.erp.PendingCheckoutPostgresIT
+21:49:38.176 [main] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
+21:49:38.181 [main] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+21:49:38.226 [main] INFO org.testcontainers.DockerClientFactory -- Testcontainers version: 1.21.3
+21:49:38.640 [main] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+21:49:39.394 [main] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+21:49:39.398 [main] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
+21:49:39.497 [main] INFO org.testcontainers.DockerClientFactory -- Connected to docker: 
+  Server Version: 29.3.1
+  API Version: 1.54
+  Operating System: Docker Desktop
+  Total Memory: 6908 MB
+  Labels: 
+    com.docker.desktop.address=npipe://\\.\pipe\docker_cli
+21:49:39.577 [main] INFO tc.testcontainers/ryuk:0.12.0 -- Creating container for image: testcontainers/ryuk:0.12.0
+21:49:39.746 [main] INFO org.testcontainers.utility.RegistryAuthLocator -- Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+21:49:40.223 [main] INFO tc.testcontainers/ryuk:0.12.0 -- Container testcontainers/ryuk:0.12.0 is starting: 8e87d96c6bfdd087aedac8adb857fd79588b7bbae337233daa2b09589c6e4993
+21:49:41.112 [main] INFO tc.testcontainers/ryuk:0.12.0 -- Container testcontainers/ryuk:0.12.0 started in PT1.5352266S
+21:49:41.129 [main] INFO org.testcontainers.utility.RyukResourceReaper -- Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+21:49:41.129 [main] INFO org.testcontainers.DockerClientFactory -- Checking the system...
+21:49:41.130 [main] INFO org.testcontainers.DockerClientFactory -- ✔︎ Docker server version should be at least 1.6.0
+21:49:41.131 [main] INFO tc.postgres:17.6-alpine -- Creating container for image: postgres:17.6-alpine
+21:49:41.263 [main] INFO tc.postgres:17.6-alpine -- Container postgres:17.6-alpine is starting: ecf4f8330c6e7a784a62b7f675578a4dabaf339abfd4b536c445976b0fcf147d
+21:49:44.094 [main] INFO tc.postgres:17.6-alpine -- Container postgres:17.6-alpine started in PT2.9622444S
+21:49:44.094 [main] INFO tc.postgres:17.6-alpine -- Container is started (JDBC URL: jdbc:postgresql://localhost:52010/test?loggerLevel=OFF)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-10-16T21:49:44.837-03:00  INFO 13140 --- [           main] br.com.erp.PendingCheckoutPostgresIT     : Starting PendingCheckoutPostgresIT using Java 21.0.12.1 with PID 13140 (started by user in C:\Users\user\Documents\dev\sistema-vendas-erp\backend)
+2026-10-16T21:49:44.839-03:00  INFO 13140 --- [           main] br.com.erp.PendingCheckoutPostgresIT     : The following 1 profile is active: "test"
+2026-10-16T21:49:48.706-03:00  INFO 13140 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-16T21:49:49.016-03:00  INFO 13140 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 289 ms. Found 2 JPA repository interfaces.
+2026-10-16T21:49:50.992-03:00  INFO 13140 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-16T21:49:51.510-03:00  INFO 13140 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@266a47fd
+2026-10-16T21:49:51.513-03:00  INFO 13140 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-16T21:49:51.581-03:00  INFO 13140 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:52010/test?loggerLevel=OFF (PostgreSQL 17.6)
+2026-10-16T21:49:51.795-03:00  INFO 13140 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2026-10-16T21:49:51.808-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 26 migrations (execution time 00:00.137s)
+2026-10-16T21:49:51.894-03:00  INFO 13140 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2026-10-16T21:49:52.007-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2026-10-16T21:49:52.041-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - foundation"
+2026-10-16T21:49:52.333-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - product catalog"
+2026-10-16T21:49:52.420-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - barcode key length"
+2026-10-16T21:49:52.480-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "4 - inventory and losses"
+2026-10-16T21:49:52.583-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "5 - user version"
+2026-10-16T21:49:52.622-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "6 - access profiles"
+2026-10-16T21:49:52.684-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "7 - branch access"
+2026-10-16T21:49:52.721-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "8 - suppliers"
+2026-10-16T21:49:52.766-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "9 - purchase orders"
+2026-10-16T21:49:52.868-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "10 - accounts payable"
+2026-10-16T21:49:52.965-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "11 - treasury"
+2026-10-16T21:49:53.049-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "12 - payable treasury link"
+2026-10-16T21:49:53.129-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "13 - customers"
+2026-10-16T21:49:53.231-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "14 - treasury receivable origins"
+2026-10-16T21:49:53.646-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "15 - accounts receivable"
+2026-10-16T21:49:53.930-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "16 - cash flow indexes"
+2026-10-16T21:49:54.070-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "17 - bank reconciliation"
+2026-10-16T21:49:54.221-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "18 - pos cash sessions"
+2026-10-16T21:49:54.362-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "19 - pos sales"
+2026-10-16T21:49:54.494-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "20 - sale payments and cancellation"
+2026-10-16T21:49:54.722-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "21 - sale returns"
+2026-10-16T21:49:54.923-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "22 - pos discounts and suspensions"
+2026-10-16T21:49:55.422-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "23 - receivable installments"
+2026-10-16T21:49:55.638-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "24 - pos on account"
+2026-10-16T21:49:55.878-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "25 - credit sale returns"
+2026-10-16T21:49:56.025-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "26 - pending checkouts"
+2026-10-16T21:49:56.121-03:00  INFO 13140 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 26 migrations to schema "public", now at version v26 (execution time 00:02.669s)
+2026-10-16T21:49:56.455-03:00  INFO 13140 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-16T21:49:56.670-03:00  INFO 13140 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.53.Final
+2026-10-16T21:49:56.745-03:00  INFO 13140 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-10-16T21:49:57.459-03:00  INFO 13140 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-16T21:49:57.661-03:00  INFO 13140 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-16T21:49:59.248-03:00  INFO 13140 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-16T21:49:59.349-03:00  INFO 13140 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-16T21:50:01.970-03:00  INFO 13140 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-16T21:50:06.713-03:00  INFO 13140 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-10-16T21:50:07.850-03:00  INFO 13140 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-16T21:50:07.850-03:00  INFO 13140 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-16T21:50:07.854-03:00  INFO 13140 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2026-10-16T21:50:08.027-03:00  INFO 13140 --- [           main] br.com.erp.PendingCheckoutPostgresIT     : Started PendingCheckoutPostgresIT in 23.857 seconds (process running for 31.756)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (C:\Users\user\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 45.85 s -- in br.com.erp.PendingCheckoutPostgresIT
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- failsafe:3.5.6:verify (default) @ erp-backend ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:12 min
+[INFO] Finished at: 2026-10-16T21:50:23-03:00
+[INFO] ------------------------------------------------------------------------
